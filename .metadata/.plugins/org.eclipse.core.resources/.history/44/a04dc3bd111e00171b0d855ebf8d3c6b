@@ -1,0 +1,10 @@
+
+public class Component {
+	Run head;
+	Run tail;
+	public Component(Run head, Run tail)
+	{
+		this.head = head;
+		this.tail = tail;
+	}
+}	

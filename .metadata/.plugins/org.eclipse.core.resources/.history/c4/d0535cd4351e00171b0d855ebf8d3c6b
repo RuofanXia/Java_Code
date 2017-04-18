@@ -1,0 +1,178 @@
+import java.util.*;
+
+public class Components {
+	ListNode head;
+	ListNode tail;
+	public Components(ListNode head, ListNode tail)
+	{
+		this.head = head;
+		this.tail = tail;
+	}
+	
+	public List<ListNode> getAllComponent(ListNode ga, ListNode gb)
+	{
+		List<ListNode> components = new ArrayList<ListNode>();
+		
+		ListNode head_a = ga;
+		ListNode head_b = gb;
+		
+		while(head_a != null && !(head_a.first == 0 && head_a.second == 0))
+		{
+			int start = 0;
+			
+			= head_a.first == 0 ? head_a.second : head_a.first;
+			
+			
+			ListNode ptr = head_a;
+			if(head_a.next != null) 
+			{
+				head_a.next.prev = null;
+				head_a.next = null;
+			}
+			ListNode ptr_head = ptr;
+			int original_start = start;
+			while(true)
+			{
+				ListNode gb_return = getNextNode(head_b, start);
+				if (gb_return.prev == null) 
+				{
+					head_b = gb_return.next;
+					if (head_b != null)
+					{
+						head_b.prev = null;
+					}
+				}
+				else
+				{
+					gb_return.prev.next = gb_return.next;
+					if (gb_return.next != null)
+					{
+						gb_return.next.prev = gb_return.prev;
+					}
+				}
+				
+				ptr.next = gb_return;
+				gb_return.prev = ptr;
+				ptr = ptr.next;
+				start = ptr.first == start ? ptr.second : ptr.first;
+				if (start == 0)
+				{
+					ptr.next = null;
+					components.add(ptr_head);
+					System.out.println("AB path");
+					break;
+				}
+				
+				ListNode ga_return = getNextNode(head_a, start);
+				if (ga_return.prev == null)
+				{
+					head_a = ga_return.next;
+					if (head_a != null)
+					{
+						head_a.prev = null;
+					}
+				}
+				else
+				{
+					ga_return.prev.next = ga_return.next;
+					if (ga_return.next != null)
+					{
+						ga_return.next.prev = ga_return.prev;
+					}
+				}
+				
+				ptr.next = ga_return;
+				ga_return.prev = ptr;
+				ptr = ptr.next;
+				start = ptr.first == start ? ptr.second : ptr.first;
+				if (start == 0)
+				{
+					ptr.next = null;
+					components.add(ptr_head);
+					System.out.println("AA path");
+					break;
+				}
+				else if (start == original_start)
+				{
+					components.add(ptr_head);
+					System.out.println("CIRCILE");
+					break;
+				}
+			}
+		}
+		
+		return components;
+	}
+	
+	public ListNode getNextNode(ListNode list, int val)
+	{
+		int index = getIndex(list, val);
+		if (index == -1)
+		{
+			System.out.println("didn't find the node, Exception!");
+			System.exit(0);
+		}
+		ListNode head = list;
+		while(index>0)
+		{
+			head = head.next;
+			index--;
+		}
+		
+		return head;
+	}
+	
+	public int getIndex(ListNode list, int val)
+	{
+		if (list == null) return -1;
+		
+		int index = 0;
+		
+		ListNode head = list;
+		
+		while(head != null)
+		{
+			if (head.first == val || head.second == val)
+			{
+				return index;
+			}
+			index++;
+			head = head.next;
+		}
+		
+		return -1;
+	}
+	
+	public int getSearchValue(ListNode list)
+	{
+		if (list.first == 0)
+		{
+			list.visited = 3;
+			return list.second;
+		}
+		else if(list.second == 0)
+		{
+			list.visited = 3;
+			return list.first;
+		}
+		else 
+		{
+			if (list.visited == 0)
+			{
+				list.visited = 1;
+				return list.first;
+			}
+			else if (list.visited == 1)
+			{
+				list.visited = 3;
+				return list.second;
+			}
+			else if (list.visited == 2)
+			{
+				list.visited = 3;
+				return list.first;
+			}
+		}
+		return -1;
+	}
+}	

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete 10 elements from project &apos;TextPhylogeny&apos;&#x0A;- Original project: &apos;TextPhylogeny&apos;&#x0A;- Original elements:&#x0A;     10_Node_0.txt&#x0A;     10_Node_1.txt&#x0A;     10_Node_2.txt&#x0A;     10_Node_3.txt&#x0A;     10_Node_4.txt&#x0A;     10_Node_5.txt&#x0A;     10_Node_6.txt&#x0A;     10_Node_7.txt&#x0A;     10_Node_8.txt&#x0A;     10_Node_9.txt" description="Delete elements" element1="10_Node_7.txt" element10="10_Node_5.txt" element2="10_Node_6.txt" element3="10_Node_8.txt" element4="10_Node_9.txt" element5="10_Node_0.txt" element6="10_Node_1.txt" element7="10_Node_2.txt" element8="10_Node_4.txt" element9="10_Node_3.txt" elements="0" flags="589830" id="org.eclipse.jdt.ui.delete" resources="10" stamp="1471297807621" subPackages="false" version="1.0"/>
+</session>

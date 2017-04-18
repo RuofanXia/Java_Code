@@ -1,0 +1,15 @@
+
+public class Test {
+	
+	public static void main(String[] args)
+	{
+		
+	}
+	
+	public void func(ListNode head)
+	{
+		ListNode thirdNode = head.next.next;
+		head.next = thirdNode;
+		thirdNode.prev = head;
+	}
+}

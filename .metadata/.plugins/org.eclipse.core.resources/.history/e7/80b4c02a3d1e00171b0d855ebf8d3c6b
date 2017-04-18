@@ -1,0 +1,31 @@
+
+public class Test {
+	
+	public static void main(String[] args)
+	{
+		ListNode head = new ListNode(1, 2, 0);
+		head.next = new ListNode(3, 4, 0);
+		head.next.next = new ListNode(5, 6, 0);
+		printInfo(head);
+		func(head);
+		System.out.println("----");
+		printInfo(head);
+	}
+	
+	public static void func(ListNode head)
+	{
+		ListNode thirdNode = head.next.next;
+		head.next = thirdNode;
+		thirdNode.prev = head;
+	}
+	
+	public static void printInfo(ListNode head)
+	{
+		ListNode ptr = head;
+		while(ptr != null)
+		{
+			System.out.println(ptr.first + ", " + ptr.second);
+			ptr = ptr.next;
+		}
+	}
+}

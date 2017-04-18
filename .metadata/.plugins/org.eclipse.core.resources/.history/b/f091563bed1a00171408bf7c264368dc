@@ -1,0 +1,6 @@
+package RPSGame;
+
+public class RPSPlayer {
+	String gesture = "";
+	
+}

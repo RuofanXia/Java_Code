@@ -1,0 +1,46 @@
+
+import java.util.*;
+
+public class MainDriver {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		List<List<List<Integer>>> all_data = PreProcessData.ReadInData();
+		Set<Integer> set = PreProcessData.equalGene(all_data);
+		ListNode[] linkedlist = PreProcessData.convertLinkedList(all_data.get(0), set, 1);
+		
+		for (ListNode each : linkedlist)
+		{
+			System.out.println("==============");
+			PreProcessData.printLinkedListWithLabel(each);
+		}
+		
+		
+		
+		/*
+		Set<Integer> set = PreProcessData.equalGene(all_data);
+		for (int i: set)
+		{
+			System.out.print(i + " ");
+		}
+		System.out.println();
+		List<HashMap<Integer, int[]>> tables = PreProcessData.genearteTable(all_data.get(0), set);
+		HashMap<Integer, int[]> order_tables = tables.get(0);
+		HashMap<Integer, int[]> gene_tables = tables.get(1);
+		
+		for (Map.Entry<Integer, int[]> entry : order_tables.entrySet())
+		{
+			int[] entry_val = entry.getValue();
+			System.out.println(entry.getKey() + ": " + entry_val[0] + " " + entry_val[1]);
+		}
+		
+		System.out.println("================================");
+		
+		for (Map.Entry<Integer, int[]> entry : gene_tables.entrySet())
+		{
+			int[] entry_val = entry.getValue();
+			System.out.println(entry.getKey() + ": " + entry_val[0] + " " + entry_val[1]);
+		}
+		*/
+	}
+
+}

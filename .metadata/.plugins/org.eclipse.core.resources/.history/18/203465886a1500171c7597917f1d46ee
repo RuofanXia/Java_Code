@@ -1,0 +1,17 @@
+package BunchOfLine;
+
+public class ExponentialLine implements Line{
+	double exp = 0;
+	
+	public ExponentialLine()
+	{
+		this.exp = 0;
+	}
+	
+	public ExponentialLine(double exp)
+	{
+		this.exp = exp;
+	}
+	
+	
+}

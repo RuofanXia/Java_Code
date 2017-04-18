@@ -1,0 +1,5 @@
+package RPSGame;
+
+public class RPSComputerPlayer {
+
+}

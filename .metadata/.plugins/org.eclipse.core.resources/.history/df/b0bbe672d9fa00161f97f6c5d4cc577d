@@ -1,0 +1,10 @@
+package Amz;
+
+public class StringPlusMinus {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

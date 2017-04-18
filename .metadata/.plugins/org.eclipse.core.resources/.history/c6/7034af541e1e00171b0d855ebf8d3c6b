@@ -1,0 +1,48 @@
+
+public class Component {
+	ListNode head;
+	ListNode tail;
+	public Component(ListNode head, ListNode tail)
+	{
+		this.head = head;
+		this.tail = tail;
+	}
+	
+	public Component[] getAllComponent(ListNode ga, ListNode gb)
+	{
+		ListNode head_a = ga;
+		ListNode head_b = gb;
+		
+		while(head_a != null && !(head_a.first == 0 && head_a.second == 0))
+		{
+			
+		}
+		
+	}
+	
+	public ListNode getNextNode(ListNode list, int val)
+	{
+		
+	}
+	
+	public int getIndex(ListNode list, int val)
+	{
+		if (list == null) return -1;
+		
+		int index = 0;
+		
+		ListNode head = list;
+		
+		while(head != null)
+		{
+			if (head.first == val || head.second == val)
+			{
+				return index;
+			}
+			index++;
+			head = head.next;
+		}
+		
+		return -1;
+	}
+}	

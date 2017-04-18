@@ -1,0 +1,13 @@
+package Amz;
+
+public class MyStack {
+	static class StackNode<T>{
+		private StackNode<T> next;
+		private T val;
+		public StackNode(T x)
+		{
+			this.next = null;
+			this.val = x;
+		}
+	}
+}

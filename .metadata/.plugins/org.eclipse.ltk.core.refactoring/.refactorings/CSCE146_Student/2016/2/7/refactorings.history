@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;Lab2.java&apos; to &apos;IntDoubleLinkedList.java&apos;&#x0A;- Original project: &apos;CSCE146_Student&apos;&#x0A;- Original element: &apos;Lab2.java&apos;&#x0A;- Renamed element: &apos;IntDoubleLinkedList.java&apos;" description="Rename compilation unit &apos;Lab2.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;{Lab2.java" name="IntDoubleLinkedList.java" references="false" stamp="1455068193809" version="1.0"/>
+</session>

@@ -1,0 +1,10 @@
+
+public class Component {
+	ListNode head;
+	ListNode tail;
+	public Component(ListNode head, ListNode tail)
+	{
+		this.head = head;
+		this.tail = tail;
+	}
+}	

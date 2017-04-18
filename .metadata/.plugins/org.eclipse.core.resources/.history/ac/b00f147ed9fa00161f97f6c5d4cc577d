@@ -1,0 +1,27 @@
+package Amz;
+
+public class StringPlusMinus {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+	
+	public static int foo(String s){  
+	    int total = 0;
+	    String currentNum = "";  
+	    for(int i =0;i<s.length();i++){   
+	        if(s.charAt(i) =='+'){   
+	           total += Integer.parseInt(currentNum);   
+	           currentNum = "";   
+	        }else if(s.charAt(i) =='-'){  
+	           total -= Integer.parseInt(currentNum);  
+	           currentNum = "";  
+	        }else{   
+	           currentNum += s.substring(i, i+1);  
+	        }   
+	     }     
+	     return total;
+	}
+
+}

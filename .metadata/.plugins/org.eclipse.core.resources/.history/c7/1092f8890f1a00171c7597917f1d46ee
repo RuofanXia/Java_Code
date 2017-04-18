@@ -1,0 +1,27 @@
+
+public class test {
+
+	public static void changeStr(String str) {
+		str = "abc";
+		str = new String("abc");
+	}
+	
+	public static void changeStrArray(int[] a) {
+		a = new int[2];
+		a[0] = 1;
+		a[1] = 2;
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		int[] a = {3, 4};
+		String str1 = "ABC";
+		String str2 = str1;
+		System.out.println(str2);
+		changeStr(str1);
+		System.out.println(str1);
+		System.out.println(a[0]);
+	}
+
+}

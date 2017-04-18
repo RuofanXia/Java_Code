@@ -1,0 +1,45 @@
+package BunchOfLine;
+
+public class StaircaseLine implements Line {
+	
+	double width = 0;
+	double height = 0;
+	
+	public StaircaseLine(double width, double height)
+	{
+		this.width = width;
+		this.height = height;
+	}
+	
+	public StaircaseLine()
+	{
+		this.width = 0;
+		this.height = 0;
+	}
+	
+	public double getWidth()
+	{
+		return this.width;
+	}
+	
+	public double getHeight()
+	{
+		return this.height;
+	}
+	
+	public void setWidth(double aWidth)
+	{
+		this.width = aWidth;
+	}
+	
+	public void setHeight(double aHeight)
+	{
+		this.height = aHeight;
+	}
+	
+	public double getYPoint(double x)
+	{
+		int i = (int) (x / this.width);
+		return i * this.height;
+	}
+}

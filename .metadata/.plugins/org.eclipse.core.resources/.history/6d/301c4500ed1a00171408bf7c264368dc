@@ -1,0 +1,7 @@
+package RPSGame;
+
+public interface RPSPlayerInterface {
+	public int getPoints();
+	public String getGesture();
+	public void setPoints(int aPoints);
+}

@@ -1,0 +1,22 @@
+package BunchOfLine;
+
+public class SineLine {
+	
+	double amplitude = 0;
+	double frequency = 0;
+	
+	public SineLine()
+	{
+		this.amplitude = 0;
+		this.frequency = 0;
+	}
+	
+	public SineLine(double amplitude, double frequency)
+	{
+		this.amplitude = amplitude;
+		this.frequency = frequency;
+	}
+	
+	
+	
+}

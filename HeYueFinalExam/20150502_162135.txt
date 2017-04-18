@@ -1,0 +1,1777 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+<meta content="no-cache" name="Cache-Control" http-equiv="Pragma" />
+<meta content="no-cache" name="Cache-Control" http-equiv="Cache-Control" />
+<link type="text/css" href="/css/web_defaultapp.css" rel="stylesheet" />
+<link media="print" type="text/css" href="/css/web_defaultprint.css" rel="stylesheet" />
+<link href="/css/app-overrides.css" type="text/css" rel="stylesheet" />
+<link href="/css/common-platform.css" type="text/css" rel="stylesheet" />
+<link href="/css/common-controls.css" type="text/css" rel="stylesheet" />
+<link href="/css/jquery/jquery.autocomplete.css" type="text/css" rel="stylesheet" />
+<link href="/css/cascade.css" type="text/css" rel="stylesheet" />
+<!--[if IE 6]><link href="/css/ie6.css" rel="stylesheet" type="text/css"><![endif]-->
+<!--[if IE 7]><link href="/css/ie7.css" rel="stylesheet" type="text/css"><![endif]-->
+<!--[if IE 8]><link href="/css/ie8.css" rel="stylesheet" type="text/css"><![endif]-->
+<link media="print" href="/css/cascade-print.css" type="text/css" rel="stylesheet" />
+<script src="/js/jquery/jquery-1.3.2.min.js" type="text/javascript"></script>
+<script src="/js/jquery/jquery.includeMany-1.2.0.js" type="text/javascript"></script>
+<script src="/js/jquery/jquery.history.js" type="text/javascript"></script>
+<script src="/js/jquery/jquery-ui-personalized-1.5.3.js" type="text/javascript"></script>
+<script src="/js/jquery/jquery.colorpicker.js" type="text/javascript"></script>
+<script src="/js/jquery/jquery.autocomplete.js" type="text/javascript"></script>
+<script src="/js/jquery/jquery.form.js" type="text/javascript"></script>
+<script src="/js/jquery/json2xml.js" type="text/javascript"></script>
+<script src="/js/jquery/jquery.jsonp-2.1.3.min.js" type="text/javascript"></script>
+<script src="/js/serviceProperties.js" type="text/javascript"></script>
+<script src="/js/common-controls-min.js" type="text/javascript"></script>
+<script src="/js/common-integrate-min.js" type="text/javascript"></script>
+<script src="/js/common-navigation-min.js" type="text/javascript"></script>
+<script src="/js/common-platform-min.js" type="text/javascript"></script>
+<script src="/js/cascade-utils-min.js" type="text/javascript"></script>
+<script src="/js/cascade-controls-min.js" type="text/javascript"></script>
+<script src="/js/udcxml-service-min.js" type="text/javascript"></script>
+<script src="/js/cascade-parser-min.js" type="text/javascript"></script>
+<script src="/js/cascade-ext-min.js" type="text/javascript"></script>
+<title>Look Up Classes</title>
+<meta content="text/javascript" name="Default_Script_Language" http-equiv="Content-Script-Type" />
+<script type="text/javascript" language="JavaScript">
+&lt;!-- Hide JavaScript from older browsers 
+window.onunload = function() {submitcount=0;}
+var submitcount=0;
+function checkSubmit() {
+if (submitcount == 0)
+   {
+   submitcount++;
+   return true;
+   }
+else
+   {
+alert("Your changes have already been submitted.");
+   return false;
+   }
+}
+//  End script hiding --&gt;
+</script>
+<script type="text/javascript" language="JavaScript">
+&lt;!-- Hide JavaScript from older browsers 
+//  Function to open a window
+function windowOpen(window_url) {
+   helpWin = window.open(window_url,'','toolbar=yes,status=no,scrollbars=yes,menubar=yes,resizable=yes,directories=no,location=no,width=450,height=575');
+   if (document.images) { 
+       if (helpWin) helpWin.focus()
+   }
+}
+//  End script hiding --&gt;
+</script>
+<script type="text/javascript" language="JavaScript">
+&lt;!-- Hide JavaScript from older browsers 
+var level_depth = "4";
+var userDetails = "Yue He";
+var userID = "Q78482084";
+var LastWebAccess = "";
+var wcMessage = "Welcome, Yue He, to Self Service Carolina";
+var sessionToken = "SkNVNzhGQkRTM1EyMTIwMTIx";
+var locale_val = "AMERICAN_AMERICA";
+var locale_lang = "en_US";
+var help_width= "450";
+var help_height = "500";
+//  End script hiding --&gt;
+</script>
+</head>
+<body style="display: block;"><div style="left: 1%; line-height: 1; font-family: monospace; width: 0px; position: absolute;" id="checkdiv">Ê</div><div id="header"><div id="globalNav"><div><ul><li><a class="signOutText pointer signOut">Sign Out</a></li><li><a class="helpText pointer">Help</a></li></ul></div></div><span class="institutionalBranding"></span><div id="areas"><div class="browseButton" id="browseButton"><div><div><a href="javascript:void(0)" class="browseButtonDownArrow" id="browseArrow">Browse</a></div></div></div></div><div id="browseMenuContainer"><div id="browseMenu"><div id="scrollableListContainer"><div class="columns header"><div class="scrollContainer"><ul class="navList navListStart" style=""><li class="parent scrollableListFolder" id="___Banner"><span>Banner</span></li></ul></div></div><div class="btn-l" id="btn-l" style="display: none;"></div><div id="columnsContainer" style=""><div id="columnsContainerTrack" style="width: 1px;"><div class="columns" style=""><span class="scrollUpButton upButtonDisabled"></span><div class="scrollContainer"><ul class="navList" style=""></ul></div><span class="scrollDownButton downButtonDisabled"></span></div></div></div><div class="btn-r" id="btn-r" style="display: none;"></div></div></div><span class="browseButton" id="browseButtonBottom"></span><span class="bottomDropShadow"></span></div></div><div id="content" class="level4" style="display: block;"><div id="navigationcontrolSmall"><span class="navArrowLeftSmall navArrowLeftSmallDisabled" style="cursor: default;"></span><span class="navArrowRightSmall navArrowRightSmallDisabled" style="cursor: default;"></span><span class="menucontainer"><span class="menutrack" id="menuTrackInst" style="width: 646.8px;"><span class="menuitem"><button url="/BANP/twbkwbis.P_GenMenu?name=bmenu.P_GenMnu" class="htmlButton menuSmallBaseButton" value="null" type="button" id="bmenu--P_GenMnu___UID1"><div class="menuSmall"><div><div>Personal Information</div></div></div></button></span><span class="menuItemSeperator"></span><span class="menuitem"><button url="/BANP/twbkwbis.P_GenMenu?name=bmenu.P_StuMainMnu" class="htmlButton menuSmallBaseButton" value="null" type="button" id="bmenu--P_StuMainMnu___UID2"><div class="menuSmall menuSmallHighlight"><div><div>Student</div></div></div></button></span><span class="menuItemSeperator"></span><span class="menuitem"><button url="/BANP/twbkwbis.P_GenMenu?name=bmenu.P_ARMnu" class="htmlButton menuSmallBaseButton" value="null" type="button" id="bmenu--P_ARMnu___UID3"><div class="menuSmall"><div><div>Account Information</div></div></div></button></span><span class="menuItemSeperator"></span><span class="menuitem"><button url="/BANP/twbkwbis.P_GenMenu?name=bmenu.P_FinAidMainMnu" class="htmlButton menuSmallBaseButton" value="null" type="button" id="bmenu--P_FinAidMainMnu___UID4"><div class="menuSmall"><div><div>Financial Aid</div></div></div></button></span><span class="menuItemSeperator"></span><span class="menuitem"><button url="/BANP/twbkwbis.P_GenMenu?name=bmenu.P_FacMainMnu" class="htmlButton menuSmallBaseButton" value="null" type="button" id="bmenu--P_FacMainMnu___UID5"><div class="menuSmall"><div><div>Faculty Services</div></div></div></button></span></span></span></div><div id="pageheaderlinks"><ul></ul></div><div id="search"><div class="searchBase"></div><div id="searchField"><span class="findicon"></span><input type="text" value="" class="searchInput ac_input" autocomplete="off" /><span class="closeicon"></span></div></div><a name="top"></a><div id="bodyContainer"><div id="pageheader" class="level4"><div id="pagetitle">Look Up Classes</div><div id="welcomemessage" style="display: none;"></div><div id="crumb" class="level4"><div class="backurl"><a title="RETURN TO MENU" href="twbkwbis.P_GenMenu?name=bmenu.P_RegMnu"></a></div><div class="breadCrumb hasBackURL"><a class="" href="javascript:void(0)">Home</a><div class="breadcrumbSeperator">&gt;</div><a class="selected" href="javascript:void(0)" style="cursor: default;">Look Up Classes</a></div></div><div class="staticheaders">
+Q78482084 Yue He<br />
+Fall 2013<br />
+May 02, 2015 04:21 pm<br />
+</div></div><div id="pagebody" class="level4"><div id="contentHolder"><div id="footerLinks" style="display: none;"><ul></ul></div><div id="contentBelt"></div><div class="pagebodydiv" style="display: block;">
+<!--  ** END OF twbkwbis.P_OpenDoc **  -->
+<form onsubmit="return checkSubmit()" method="POST" action="/BANP/bwskfreg.P_AltPin1">
+<input type="hidden" value="dummy" name="crn" />
+<input type="hidden" value="dummy" name="rsts" />
+</form>
+
+<table width="80%" border="0" summary="This layout table is used to present the course found" class="datadisplaytable">
+</table>
+<table width="80%" border="0" summary="This layout table is used to present the course found" class="datadisplaytable">
+</table>
+<table width="80%" border="0" summary="This layout table is used to present the course found" class="datadisplaytable">
+</table>
+<table width="80%" border="0" summary="This layout table is used to present the course found" class="datadisplaytable">
+<tbody><tr>
+<th scope="row" class="ddlabel" colspan="7" style="background: none repeat scroll 0% 0% transparent; color: rgb(0, 0, 0);"><span class="fieldOrangetextbold">Fall 2013</span></th>
+</tr>
+<tr>
+<th style="font-size:16px;" colspan="4" scope="col" class="ddheader">CSCE - Comp Sci &amp; Comp Engr - USC Columbia</th>
+</tr>
+<tr><td width="10%" class="dddefault">101</td>
+<td width="35%" text-align="left" class="dddefault">Intro to Computer Concepts</td>
+<td>
+<form onsubmit="return checkSubmit()" method="POST" action="/BANP/bwskfcls.P_GetCrse">
+<input type="hidden" value="201341" name="term_in" />
+<input type="hidden" value="dummy" name="sel_subj" />
+<input type="hidden" value="CSCE" name="sel_subj" />
+<input type="hidden" value="101" name="SEL_CRSE" />
+<input type="hidden" value="" name="SEL_TITLE" />
+<input type="hidden" value="0" name="BEGIN_HH" />
+<input type="hidden" value="0" name="BEGIN_MI" />
+<input type="hidden" value="a" name="BEGIN_AP" />
+<input type="hidden" value="dummy" name="SEL_DAY" />
+<input type="hidden" value="dummy" name="SEL_PTRM" />
+<input type="hidden" value="0" name="END_HH" />
+<input type="hidden" value="0" name="END_MI" />
+<input type="hidden" value="a" name="END_AP" />
+<input type="hidden" value="dummy" name="SEL_CAMP" />
+<input type="hidden" value="COL" name="SEL_CAMP" />
+<input type="hidden" value="dummy" name="SEL_SCHD" />
+<input type="hidden" value="dummy" name="SEL_SESS" />
+<input type="hidden" value="dummy" name="SEL_INSTR" />
+<input type="hidden" value="%" name="SEL_INSTR" />
+<input type="hidden" value="dummy" name="SEL_ATTR" />
+<input type="hidden" value="%" name="SEL_ATTR" />
+<input type="hidden" value="dummy" name="SEL_LEVL" />
+<input type="hidden" value="%" name="SEL_LEVL" />
+<input type="hidden" value="dummy" name="SEL_INSM" />
+<input type="hidden" value="" name="sel_dunt_code" />
+<input type="hidden" value="" name="sel_dunt_unit" />
+<input type="hidden" value="" name="call_value_in" />
+<input type="hidden" value="dummy" name="rsts" />
+<input type="hidden" value="dummy" name="crn" />
+<input type="hidden" value="1" name="path" />
+<button url="" class="htmlButton" '="" onclick="beforeSubmit(this)" value="View Sections" name="SUB_BTN" type="submit" id="id____UID6"><div class="defaultButtonSmall"><div><div>View Sections</div></div></div></button><input type="submit" value="View Sections" name="SUB_BTN" style="display: none;" />
+</form>
+<br />
+</td>
+</tr>
+<tr><td width="10%" class="dddefault">102</td>
+<td width="35%" text-align="left" class="dddefault">General Applicat Programming</td>
+<td>
+<form onsubmit="return checkSubmit()" method="POST" action="/BANP/bwskfcls.P_GetCrse">
+<input type="hidden" value="201341" name="term_in" />
+<input type="hidden" value="dummy" name="sel_subj" />
+<input type="hidden" value="CSCE" name="sel_subj" />
+<input type="hidden" value="102" name="SEL_CRSE" />
+<input type="hidden" value="" name="SEL_TITLE" />
+<input type="hidden" value="0" name="BEGIN_HH" />
+<input type="hidden" value="0" name="BEGIN_MI" />
+<input type="hidden" value="a" name="BEGIN_AP" />
+<input type="hidden" value="dummy" name="SEL_DAY" />
+<input type="hidden" value="dummy" name="SEL_PTRM" />
+<input type="hidden" value="0" name="END_HH" />
+<input type="hidden" value="0" name="END_MI" />
+<input type="hidden" value="a" name="END_AP" />
+<input type="hidden" value="dummy" name="SEL_CAMP" />
+<input type="hidden" value="COL" name="SEL_CAMP" />
+<input type="hidden" value="dummy" name="SEL_SCHD" />
+<input type="hidden" value="dummy" name="SEL_SESS" />
+<input type="hidden" value="dummy" name="SEL_INSTR" />
+<input type="hidden" value="%" name="SEL_INSTR" />
+<input type="hidden" value="dummy" name="SEL_ATTR" />
+<input type="hidden" value="%" name="SEL_ATTR" />
+<input type="hidden" value="dummy" name="SEL_LEVL" />
+<input type="hidden" value="%" name="SEL_LEVL" />
+<input type="hidden" value="dummy" name="SEL_INSM" />
+<input type="hidden" value="" name="sel_dunt_code" />
+<input type="hidden" value="" name="sel_dunt_unit" />
+<input type="hidden" value="" name="call_value_in" />
+<input type="hidden" value="dummy" name="rsts" />
+<input type="hidden" value="dummy" name="crn" />
+<input type="hidden" value="1" name="path" />
+<button url="" class="htmlButton" '="" onclick="beforeSubmit(this)" value="View Sections" name="SUB_BTN" type="submit" id="id____UID7"><div class="defaultButtonSmall"><div><div>View Sections</div></div></div></button><input type="submit" value="View Sections" name="SUB_BTN" style="display: none;" />
+</form>
+<br />
+</td>
+</tr>
+<tr><td width="10%" class="dddefault">145</td>
+<td width="35%" text-align="left" class="dddefault">Algorithmic Design I</td>
+<td>
+<form onsubmit="return checkSubmit()" method="POST" action="/BANP/bwskfcls.P_GetCrse">
+<input type="hidden" value="201341" name="term_in" />
+<input type="hidden" value="dummy" name="sel_subj" />
+<input type="hidden" value="CSCE" name="sel_subj" />
+<input type="hidden" value="145" name="SEL_CRSE" />
+<input type="hidden" value="" name="SEL_TITLE" />
+<input type="hidden" value="0" name="BEGIN_HH" />
+<input type="hidden" value="0" name="BEGIN_MI" />
+<input type="hidden" value="a" name="BEGIN_AP" />
+<input type="hidden" value="dummy" name="SEL_DAY" />
+<input type="hidden" value="dummy" name="SEL_PTRM" />
+<input type="hidden" value="0" name="END_HH" />
+<input type="hidden" value="0" name="END_MI" />
+<input type="hidden" value="a" name="END_AP" />
+<input type="hidden" value="dummy" name="SEL_CAMP" />
+<input type="hidden" value="COL" name="SEL_CAMP" />
+<input type="hidden" value="dummy" name="SEL_SCHD" />
+<input type="hidden" value="dummy" name="SEL_SESS" />
+<input type="hidden" value="dummy" name="SEL_INSTR" />
+<input type="hidden" value="%" name="SEL_INSTR" />
+<input type="hidden" value="dummy" name="SEL_ATTR" />
+<input type="hidden" value="%" name="SEL_ATTR" />
+<input type="hidden" value="dummy" name="SEL_LEVL" />
+<input type="hidden" value="%" name="SEL_LEVL" />
+<input type="hidden" value="dummy" name="SEL_INSM" />
+<input type="hidden" value="" name="sel_dunt_code" />
+<input type="hidden" value="" name="sel_dunt_unit" />
+<input type="hidden" value="" name="call_value_in" />
+<input type="hidden" value="dummy" name="rsts" />
+<input type="hidden" value="dummy" name="crn" />
+<input type="hidden" value="1" name="path" />
+<button url="" class="htmlButton" '="" onclick="beforeSubmit(this)" value="View Sections" name="SUB_BTN" type="submit" id="id____UID8"><div class="defaultButtonSmall"><div><div>View Sections</div></div></div></button><input type="submit" value="View Sections" name="SUB_BTN" style="display: none;" />
+</form>
+<br />
+</td>
+</tr>
+<tr><td width="10%" class="dddefault">146</td>
+<td width="35%" text-align="left" class="dddefault">Algorithmic Design II</td>
+<td>
+<form onsubmit="return checkSubmit()" method="POST" action="/BANP/bwskfcls.P_GetCrse">
+<input type="hidden" value="201341" name="term_in" />
+<input type="hidden" value="dummy" name="sel_subj" />
+<input type="hidden" value="CSCE" name="sel_subj" />
+<input type="hidden" value="146" name="SEL_CRSE" />
+<input type="hidden" value="" name="SEL_TITLE" />
+<input type="hidden" value="0" name="BEGIN_HH" />
+<input type="hidden" value="0" name="BEGIN_MI" />
+<input type="hidden" value="a" name="BEGIN_AP" />
+<input type="hidden" value="dummy" name="SEL_DAY" />
+<input type="hidden" value="dummy" name="SEL_PTRM" />
+<input type="hidden" value="0" name="END_HH" />
+<input type="hidden" value="0" name="END_MI" />
+<input type="hidden" value="a" name="END_AP" />
+<input type="hidden" value="dummy" name="SEL_CAMP" />
+<input type="hidden" value="COL" name="SEL_CAMP" />
+<input type="hidden" value="dummy" name="SEL_SCHD" />
+<input type="hidden" value="dummy" name="SEL_SESS" />
+<input type="hidden" value="dummy" name="SEL_INSTR" />
+<input type="hidden" value="%" name="SEL_INSTR" />
+<input type="hidden" value="dummy" name="SEL_ATTR" />
+<input type="hidden" value="%" name="SEL_ATTR" />
+<input type="hidden" value="dummy" name="SEL_LEVL" />
+<input type="hidden" value="%" name="SEL_LEVL" />
+<input type="hidden" value="dummy" name="SEL_INSM" />
+<input type="hidden" value="" name="sel_dunt_code" />
+<input type="hidden" value="" name="sel_dunt_unit" />
+<input type="hidden" value="" name="call_value_in" />
+<input type="hidden" value="dummy" name="rsts" />
+<input type="hidden" value="dummy" name="crn" />
+<input type="hidden" value="1" name="path" />
+<button url="" class="htmlButton" '="" onclick="beforeSubmit(this)" value="View Sections" name="SUB_BTN" type="submit" id="id____UID9"><div class="defaultButtonSmall"><div><div>View Sections</div></div></div></button><input type="submit" value="View Sections" name="SUB_BTN" style="display: none;" />
+</form>
+<br />
+</td>
+</tr>
+<tr><td width="10%" class="dddefault">190</td>
+<td width="35%" text-align="left" class="dddefault">Computing in the Modern World</td>
+<td>
+<form onsubmit="return checkSubmit()" method="POST" action="/BANP/bwskfcls.P_GetCrse">
+<input type="hidden" value="201341" name="term_in" />
+<input type="hidden" value="dummy" name="sel_subj" />
+<input type="hidden" value="CSCE" name="sel_subj" />
+<input type="hidden" value="190" name="SEL_CRSE" />
+<input type="hidden" value="" name="SEL_TITLE" />
+<input type="hidden" value="0" name="BEGIN_HH" />
+<input type="hidden" value="0" name="BEGIN_MI" />
+<input type="hidden" value="a" name="BEGIN_AP" />
+<input type="hidden" value="dummy" name="SEL_DAY" />
+<input type="hidden" value="dummy" name="SEL_PTRM" />
+<input type="hidden" value="0" name="END_HH" />
+<input type="hidden" value="0" name="END_MI" />
+<input type="hidden" value="a" name="END_AP" />
+<input type="hidden" value="dummy" name="SEL_CAMP" />
+<input type="hidden" value="COL" name="SEL_CAMP" />
+<input type="hidden" value="dummy" name="SEL_SCHD" />
+<input type="hidden" value="dummy" name="SEL_SESS" />
+<input type="hidden" value="dummy" name="SEL_INSTR" />
+<input type="hidden" value="%" name="SEL_INSTR" />
+<input type="hidden" value="dummy" name="SEL_ATTR" />
+<input type="hidden" value="%" name="SEL_ATTR" />
+<input type="hidden" value="dummy" name="SEL_LEVL" />
+<input type="hidden" value="%" name="SEL_LEVL" />
+<input type="hidden" value="dummy" name="SEL_INSM" />
+<input type="hidden" value="" name="sel_dunt_code" />
+<input type="hidden" value="" name="sel_dunt_unit" />
+<input type="hidden" value="" name="call_value_in" />
+<input type="hidden" value="dummy" name="rsts" />
+<input type="hidden" value="dummy" name="crn" />
+<input type="hidden" value="1" name="path" />
+<button url="" class="htmlButton" '="" onclick="beforeSubmit(this)" value="View Sections" name="SUB_BTN" type="submit" id="id____UID10"><div class="defaultButtonSmall"><div><div>View Sections</div></div></div></button><input type="submit" value="View Sections" name="SUB_BTN" style="display: none;" />
+</form>
+<br />
+</td>
+</tr>
+<tr><td width="10%" class="dddefault">201</td>
+<td width="35%" text-align="left" class="dddefault">Intro to Computer Security</td>
+<td>
+<form onsubmit="return checkSubmit()" method="POST" action="/BANP/bwskfcls.P_GetCrse">
+<input type="hidden" value="201341" name="term_in" />
+<input type="hidden" value="dummy" name="sel_subj" />
+<input type="hidden" value="CSCE" name="sel_subj" />
+<input type="hidden" value="201" name="SEL_CRSE" />
+<input type="hidden" value="" name="SEL_TITLE" />
+<input type="hidden" value="0" name="BEGIN_HH" />
+<input type="hidden" value="0" name="BEGIN_MI" />
+<input type="hidden" value="a" name="BEGIN_AP" />
+<input type="hidden" value="dummy" name="SEL_DAY" />
+<input type="hidden" value="dummy" name="SEL_PTRM" />
+<input type="hidden" value="0" name="END_HH" />
+<input type="hidden" value="0" name="END_MI" />
+<input type="hidden" value="a" name="END_AP" />
+<input type="hidden" value="dummy" name="SEL_CAMP" />
+<input type="hidden" value="COL" name="SEL_CAMP" />
+<input type="hidden" value="dummy" name="SEL_SCHD" />
+<input type="hidden" value="dummy" name="SEL_SESS" />
+<input type="hidden" value="dummy" name="SEL_INSTR" />
+<input type="hidden" value="%" name="SEL_INSTR" />
+<input type="hidden" value="dummy" name="SEL_ATTR" />
+<input type="hidden" value="%" name="SEL_ATTR" />
+<input type="hidden" value="dummy" name="SEL_LEVL" />
+<input type="hidden" value="%" name="SEL_LEVL" />
+<input type="hidden" value="dummy" name="SEL_INSM" />
+<input type="hidden" value="" name="sel_dunt_code" />
+<input type="hidden" value="" name="sel_dunt_unit" />
+<input type="hidden" value="" name="call_value_in" />
+<input type="hidden" value="dummy" name="rsts" />
+<input type="hidden" value="dummy" name="crn" />
+<input type="hidden" value="1" name="path" />
+<button url="" class="htmlButton" '="" onclick="beforeSubmit(this)" value="View Sections" name="SUB_BTN" type="submit" id="id____UID11"><div class="defaultButtonSmall"><div><div>View Sections</div></div></div></button><input type="submit" value="View Sections" name="SUB_BTN" style="display: none;" />
+</form>
+<br />
+</td>
+</tr>
+<tr><td width="10%" class="dddefault">204</td>
+<td width="35%" text-align="left" class="dddefault">Program Design &amp; Development</td>
+<td>
+<form onsubmit="return checkSubmit()" method="POST" action="/BANP/bwskfcls.P_GetCrse">
+<input type="hidden" value="201341" name="term_in" />
+<input type="hidden" value="dummy" name="sel_subj" />
+<input type="hidden" value="CSCE" name="sel_subj" />
+<input type="hidden" value="204" name="SEL_CRSE" />
+<input type="hidden" value="" name="SEL_TITLE" />
+<input type="hidden" value="0" name="BEGIN_HH" />
+<input type="hidden" value="0" name="BEGIN_MI" />
+<input type="hidden" value="a" name="BEGIN_AP" />
+<input type="hidden" value="dummy" name="SEL_DAY" />
+<input type="hidden" value="dummy" name="SEL_PTRM" />
+<input type="hidden" value="0" name="END_HH" />
+<input type="hidden" value="0" name="END_MI" />
+<input type="hidden" value="a" name="END_AP" />
+<input type="hidden" value="dummy" name="SEL_CAMP" />
+<input type="hidden" value="COL" name="SEL_CAMP" />
+<input type="hidden" value="dummy" name="SEL_SCHD" />
+<input type="hidden" value="dummy" name="SEL_SESS" />
+<input type="hidden" value="dummy" name="SEL_INSTR" />
+<input type="hidden" value="%" name="SEL_INSTR" />
+<input type="hidden" value="dummy" name="SEL_ATTR" />
+<input type="hidden" value="%" name="SEL_ATTR" />
+<input type="hidden" value="dummy" name="SEL_LEVL" />
+<input type="hidden" value="%" name="SEL_LEVL" />
+<input type="hidden" value="dummy" name="SEL_INSM" />
+<input type="hidden" value="" name="sel_dunt_code" />
+<input type="hidden" value="" name="sel_dunt_unit" />
+<input type="hidden" value="" name="call_value_in" />
+<input type="hidden" value="dummy" name="rsts" />
+<input type="hidden" value="dummy" name="crn" />
+<input type="hidden" value="1" name="path" />
+<button url="" class="htmlButton" '="" onclick="beforeSubmit(this)" value="View Sections" name="SUB_BTN" type="submit" id="id____UID12"><div class="defaultButtonSmall"><div><div>View Sections</div></div></div></button><input type="submit" value="View Sections" name="SUB_BTN" style="display: none;" />
+</form>
+<br />
+</td>
+</tr>
+<tr><td width="10%" class="dddefault">205</td>
+<td width="35%" text-align="left" class="dddefault">Business Applicat Programming</td>
+<td>
+<form onsubmit="return checkSubmit()" method="POST" action="/BANP/bwskfcls.P_GetCrse">
+<input type="hidden" value="201341" name="term_in" />
+<input type="hidden" value="dummy" name="sel_subj" />
+<input type="hidden" value="CSCE" name="sel_subj" />
+<input type="hidden" value="205" name="SEL_CRSE" />
+<input type="hidden" value="" name="SEL_TITLE" />
+<input type="hidden" value="0" name="BEGIN_HH" />
+<input type="hidden" value="0" name="BEGIN_MI" />
+<input type="hidden" value="a" name="BEGIN_AP" />
+<input type="hidden" value="dummy" name="SEL_DAY" />
+<input type="hidden" value="dummy" name="SEL_PTRM" />
+<input type="hidden" value="0" name="END_HH" />
+<input type="hidden" value="0" name="END_MI" />
+<input type="hidden" value="a" name="END_AP" />
+<input type="hidden" value="dummy" name="SEL_CAMP" />
+<input type="hidden" value="COL" name="SEL_CAMP" />
+<input type="hidden" value="dummy" name="SEL_SCHD" />
+<input type="hidden" value="dummy" name="SEL_SESS" />
+<input type="hidden" value="dummy" name="SEL_INSTR" />
+<input type="hidden" value="%" name="SEL_INSTR" />
+<input type="hidden" value="dummy" name="SEL_ATTR" />
+<input type="hidden" value="%" name="SEL_ATTR" />
+<input type="hidden" value="dummy" name="SEL_LEVL" />
+<input type="hidden" value="%" name="SEL_LEVL" />
+<input type="hidden" value="dummy" name="SEL_INSM" />
+<input type="hidden" value="" name="sel_dunt_code" />
+<input type="hidden" value="" name="sel_dunt_unit" />
+<input type="hidden" value="" name="call_value_in" />
+<input type="hidden" value="dummy" name="rsts" />
+<input type="hidden" value="dummy" name="crn" />
+<input type="hidden" value="1" name="path" />
+<button url="" class="htmlButton" '="" onclick="beforeSubmit(this)" value="View Sections" name="SUB_BTN" type="submit" id="id____UID13"><div class="defaultButtonSmall"><div><div>View Sections</div></div></div></button><input type="submit" value="View Sections" name="SUB_BTN" style="display: none;" />
+</form>
+<br />
+</td>
+</tr>
+<tr><td width="10%" class="dddefault">206</td>
+<td width="35%" text-align="left" class="dddefault">Scientific Applicat Programmng</td>
+<td>
+<form onsubmit="return checkSubmit()" method="POST" action="/BANP/bwskfcls.P_GetCrse">
+<input type="hidden" value="201341" name="term_in" />
+<input type="hidden" value="dummy" name="sel_subj" />
+<input type="hidden" value="CSCE" name="sel_subj" />
+<input type="hidden" value="206" name="SEL_CRSE" />
+<input type="hidden" value="" name="SEL_TITLE" />
+<input type="hidden" value="0" name="BEGIN_HH" />
+<input type="hidden" value="0" name="BEGIN_MI" />
+<input type="hidden" value="a" name="BEGIN_AP" />
+<input type="hidden" value="dummy" name="SEL_DAY" />
+<input type="hidden" value="dummy" name="SEL_PTRM" />
+<input type="hidden" value="0" name="END_HH" />
+<input type="hidden" value="0" name="END_MI" />
+<input type="hidden" value="a" name="END_AP" />
+<input type="hidden" value="dummy" name="SEL_CAMP" />
+<input type="hidden" value="COL" name="SEL_CAMP" />
+<input type="hidden" value="dummy" name="SEL_SCHD" />
+<input type="hidden" value="dummy" name="SEL_SESS" />
+<input type="hidden" value="dummy" name="SEL_INSTR" />
+<input type="hidden" value="%" name="SEL_INSTR" />
+<input type="hidden" value="dummy" name="SEL_ATTR" />
+<input type="hidden" value="%" name="SEL_ATTR" />
+<input type="hidden" value="dummy" name="SEL_LEVL" />
+<input type="hidden" value="%" name="SEL_LEVL" />
+<input type="hidden" value="dummy" name="SEL_INSM" />
+<input type="hidden" value="" name="sel_dunt_code" />
+<input type="hidden" value="" name="sel_dunt_unit" />
+<input type="hidden" value="" name="call_value_in" />
+<input type="hidden" value="dummy" name="rsts" />
+<input type="hidden" value="dummy" name="crn" />
+<input type="hidden" value="1" name="path" />
+<button url="" class="htmlButton" '="" onclick="beforeSubmit(this)" value="View Sections" name="SUB_BTN" type="submit" id="id____UID14"><div class="defaultButtonSmall"><div><div>View Sections</div></div></div></button><input type="submit" value="View Sections" name="SUB_BTN" style="display: none;" />
+</form>
+<br />
+</td>
+</tr>
+<tr><td width="10%" class="dddefault">210</td>
+<td width="35%" text-align="left" class="dddefault">Computer Hardware Foundations</td>
+<td>
+<form onsubmit="return checkSubmit()" method="POST" action="/BANP/bwskfcls.P_GetCrse">
+<input type="hidden" value="201341" name="term_in" />
+<input type="hidden" value="dummy" name="sel_subj" />
+<input type="hidden" value="CSCE" name="sel_subj" />
+<input type="hidden" value="210" name="SEL_CRSE" />
+<input type="hidden" value="" name="SEL_TITLE" />
+<input type="hidden" value="0" name="BEGIN_HH" />
+<input type="hidden" value="0" name="BEGIN_MI" />
+<input type="hidden" value="a" name="BEGIN_AP" />
+<input type="hidden" value="dummy" name="SEL_DAY" />
+<input type="hidden" value="dummy" name="SEL_PTRM" />
+<input type="hidden" value="0" name="END_HH" />
+<input type="hidden" value="0" name="END_MI" />
+<input type="hidden" value="a" name="END_AP" />
+<input type="hidden" value="dummy" name="SEL_CAMP" />
+<input type="hidden" value="COL" name="SEL_CAMP" />
+<input type="hidden" value="dummy" name="SEL_SCHD" />
+<input type="hidden" value="dummy" name="SEL_SESS" />
+<input type="hidden" value="dummy" name="SEL_INSTR" />
+<input type="hidden" value="%" name="SEL_INSTR" />
+<input type="hidden" value="dummy" name="SEL_ATTR" />
+<input type="hidden" value="%" name="SEL_ATTR" />
+<input type="hidden" value="dummy" name="SEL_LEVL" />
+<input type="hidden" value="%" name="SEL_LEVL" />
+<input type="hidden" value="dummy" name="SEL_INSM" />
+<input type="hidden" value="" name="sel_dunt_code" />
+<input type="hidden" value="" name="sel_dunt_unit" />
+<input type="hidden" value="" name="call_value_in" />
+<input type="hidden" value="dummy" name="rsts" />
+<input type="hidden" value="dummy" name="crn" />
+<input type="hidden" value="1" name="path" />
+<button url="" class="htmlButton" '="" onclick="beforeSubmit(this)" value="View Sections" name="SUB_BTN" type="submit" id="id____UID15"><div class="defaultButtonSmall"><div><div>View Sections</div></div></div></button><input type="submit" value="View Sections" name="SUB_BTN" style="display: none;" />
+</form>
+<br />
+</td>
+</tr>
+<tr><td width="10%" class="dddefault">211</td>
+<td width="35%" text-align="left" class="dddefault">Digital Logic Design</td>
+<td>
+<form onsubmit="return checkSubmit()" method="POST" action="/BANP/bwskfcls.P_GetCrse">
+<input type="hidden" value="201341" name="term_in" />
+<input type="hidden" value="dummy" name="sel_subj" />
+<input type="hidden" value="CSCE" name="sel_subj" />
+<input type="hidden" value="211" name="SEL_CRSE" />
+<input type="hidden" value="" name="SEL_TITLE" />
+<input type="hidden" value="0" name="BEGIN_HH" />
+<input type="hidden" value="0" name="BEGIN_MI" />
+<input type="hidden" value="a" name="BEGIN_AP" />
+<input type="hidden" value="dummy" name="SEL_DAY" />
+<input type="hidden" value="dummy" name="SEL_PTRM" />
+<input type="hidden" value="0" name="END_HH" />
+<input type="hidden" value="0" name="END_MI" />
+<input type="hidden" value="a" name="END_AP" />
+<input type="hidden" value="dummy" name="SEL_CAMP" />
+<input type="hidden" value="COL" name="SEL_CAMP" />
+<input type="hidden" value="dummy" name="SEL_SCHD" />
+<input type="hidden" value="dummy" name="SEL_SESS" />
+<input type="hidden" value="dummy" name="SEL_INSTR" />
+<input type="hidden" value="%" name="SEL_INSTR" />
+<input type="hidden" value="dummy" name="SEL_ATTR" />
+<input type="hidden" value="%" name="SEL_ATTR" />
+<input type="hidden" value="dummy" name="SEL_LEVL" />
+<input type="hidden" value="%" name="SEL_LEVL" />
+<input type="hidden" value="dummy" name="SEL_INSM" />
+<input type="hidden" value="" name="sel_dunt_code" />
+<input type="hidden" value="" name="sel_dunt_unit" />
+<input type="hidden" value="" name="call_value_in" />
+<input type="hidden" value="dummy" name="rsts" />
+<input type="hidden" value="dummy" name="crn" />
+<input type="hidden" value="1" name="path" />
+<button url="" class="htmlButton" '="" onclick="beforeSubmit(this)" value="View Sections" name="SUB_BTN" type="submit" id="id____UID16"><div class="defaultButtonSmall"><div><div>View Sections</div></div></div></button><input type="submit" value="View Sections" name="SUB_BTN" style="display: none;" />
+</form>
+<br />
+</td>
+</tr>
+<tr><td width="10%" class="dddefault">212</td>
+<td width="35%" text-align="left" class="dddefault">Intro to Computer Architecture</td>
+<td>
+<form onsubmit="return checkSubmit()" method="POST" action="/BANP/bwskfcls.P_GetCrse">
+<input type="hidden" value="201341" name="term_in" />
+<input type="hidden" value="dummy" name="sel_subj" />
+<input type="hidden" value="CSCE" name="sel_subj" />
+<input type="hidden" value="212" name="SEL_CRSE" />
+<input type="hidden" value="" name="SEL_TITLE" />
+<input type="hidden" value="0" name="BEGIN_HH" />
+<input type="hidden" value="0" name="BEGIN_MI" />
+<input type="hidden" value="a" name="BEGIN_AP" />
+<input type="hidden" value="dummy" name="SEL_DAY" />
+<input type="hidden" value="dummy" name="SEL_PTRM" />
+<input type="hidden" value="0" name="END_HH" />
+<input type="hidden" value="0" name="END_MI" />
+<input type="hidden" value="a" name="END_AP" />
+<input type="hidden" value="dummy" name="SEL_CAMP" />
+<input type="hidden" value="COL" name="SEL_CAMP" />
+<input type="hidden" value="dummy" name="SEL_SCHD" />
+<input type="hidden" value="dummy" name="SEL_SESS" />
+<input type="hidden" value="dummy" name="SEL_INSTR" />
+<input type="hidden" value="%" name="SEL_INSTR" />
+<input type="hidden" value="dummy" name="SEL_ATTR" />
+<input type="hidden" value="%" name="SEL_ATTR" />
+<input type="hidden" value="dummy" name="SEL_LEVL" />
+<input type="hidden" value="%" name="SEL_LEVL" />
+<input type="hidden" value="dummy" name="SEL_INSM" />
+<input type="hidden" value="" name="sel_dunt_code" />
+<input type="hidden" value="" name="sel_dunt_unit" />
+<input type="hidden" value="" name="call_value_in" />
+<input type="hidden" value="dummy" name="rsts" />
+<input type="hidden" value="dummy" name="crn" />
+<input type="hidden" value="1" name="path" />
+<button url="" class="htmlButton" '="" onclick="beforeSubmit(this)" value="View Sections" name="SUB_BTN" type="submit" id="id____UID17"><div class="defaultButtonSmall"><div><div>View Sections</div></div></div></button><input type="submit" value="View Sections" name="SUB_BTN" style="display: none;" />
+</form>
+<br />
+</td>
+</tr>
+<tr><td width="10%" class="dddefault">215</td>
+<td width="35%" text-align="left" class="dddefault">UNIX/Linux Fundamentals</td>
+<td>
+<form onsubmit="return checkSubmit()" method="POST" action="/BANP/bwskfcls.P_GetCrse">
+<input type="hidden" value="201341" name="term_in" />
+<input type="hidden" value="dummy" name="sel_subj" />
+<input type="hidden" value="CSCE" name="sel_subj" />
+<input type="hidden" value="215" name="SEL_CRSE" />
+<input type="hidden" value="" name="SEL_TITLE" />
+<input type="hidden" value="0" name="BEGIN_HH" />
+<input type="hidden" value="0" name="BEGIN_MI" />
+<input type="hidden" value="a" name="BEGIN_AP" />
+<input type="hidden" value="dummy" name="SEL_DAY" />
+<input type="hidden" value="dummy" name="SEL_PTRM" />
+<input type="hidden" value="0" name="END_HH" />
+<input type="hidden" value="0" name="END_MI" />
+<input type="hidden" value="a" name="END_AP" />
+<input type="hidden" value="dummy" name="SEL_CAMP" />
+<input type="hidden" value="COL" name="SEL_CAMP" />
+<input type="hidden" value="dummy" name="SEL_SCHD" />
+<input type="hidden" value="dummy" name="SEL_SESS" />
+<input type="hidden" value="dummy" name="SEL_INSTR" />
+<input type="hidden" value="%" name="SEL_INSTR" />
+<input type="hidden" value="dummy" name="SEL_ATTR" />
+<input type="hidden" value="%" name="SEL_ATTR" />
+<input type="hidden" value="dummy" name="SEL_LEVL" />
+<input type="hidden" value="%" name="SEL_LEVL" />
+<input type="hidden" value="dummy" name="SEL_INSM" />
+<input type="hidden" value="" name="sel_dunt_code" />
+<input type="hidden" value="" name="sel_dunt_unit" />
+<input type="hidden" value="" name="call_value_in" />
+<input type="hidden" value="dummy" name="rsts" />
+<input type="hidden" value="dummy" name="crn" />
+<input type="hidden" value="1" name="path" />
+<button url="" class="htmlButton" '="" onclick="beforeSubmit(this)" value="View Sections" name="SUB_BTN" type="submit" id="id____UID18"><div class="defaultButtonSmall"><div><div>View Sections</div></div></div></button><input type="submit" value="View Sections" name="SUB_BTN" style="display: none;" />
+</form>
+<br />
+</td>
+</tr>
+<tr><td width="10%" class="dddefault">240</td>
+<td width="35%" text-align="left" class="dddefault">Intro to Software Engineering</td>
+<td>
+<form onsubmit="return checkSubmit()" method="POST" action="/BANP/bwskfcls.P_GetCrse">
+<input type="hidden" value="201341" name="term_in" />
+<input type="hidden" value="dummy" name="sel_subj" />
+<input type="hidden" value="CSCE" name="sel_subj" />
+<input type="hidden" value="240" name="SEL_CRSE" />
+<input type="hidden" value="" name="SEL_TITLE" />
+<input type="hidden" value="0" name="BEGIN_HH" />
+<input type="hidden" value="0" name="BEGIN_MI" />
+<input type="hidden" value="a" name="BEGIN_AP" />
+<input type="hidden" value="dummy" name="SEL_DAY" />
+<input type="hidden" value="dummy" name="SEL_PTRM" />
+<input type="hidden" value="0" name="END_HH" />
+<input type="hidden" value="0" name="END_MI" />
+<input type="hidden" value="a" name="END_AP" />
+<input type="hidden" value="dummy" name="SEL_CAMP" />
+<input type="hidden" value="COL" name="SEL_CAMP" />
+<input type="hidden" value="dummy" name="SEL_SCHD" />
+<input type="hidden" value="dummy" name="SEL_SESS" />
+<input type="hidden" value="dummy" name="SEL_INSTR" />
+<input type="hidden" value="%" name="SEL_INSTR" />
+<input type="hidden" value="dummy" name="SEL_ATTR" />
+<input type="hidden" value="%" name="SEL_ATTR" />
+<input type="hidden" value="dummy" name="SEL_LEVL" />
+<input type="hidden" value="%" name="SEL_LEVL" />
+<input type="hidden" value="dummy" name="SEL_INSM" />
+<input type="hidden" value="" name="sel_dunt_code" />
+<input type="hidden" value="" name="sel_dunt_unit" />
+<input type="hidden" value="" name="call_value_in" />
+<input type="hidden" value="dummy" name="rsts" />
+<input type="hidden" value="dummy" name="crn" />
+<input type="hidden" value="1" name="path" />
+<button url="" class="htmlButton" '="" onclick="beforeSubmit(this)" value="View Sections" name="SUB_BTN" type="submit" id="id____UID19"><div class="defaultButtonSmall"><div><div>View Sections</div></div></div></button><input type="submit" value="View Sections" name="SUB_BTN" style="display: none;" />
+</form>
+<br />
+</td>
+</tr>
+<tr><td width="10%" class="dddefault">311</td>
+<td width="35%" text-align="left" class="dddefault">Operating Systems</td>
+<td>
+<form onsubmit="return checkSubmit()" method="POST" action="/BANP/bwskfcls.P_GetCrse">
+<input type="hidden" value="201341" name="term_in" />
+<input type="hidden" value="dummy" name="sel_subj" />
+<input type="hidden" value="CSCE" name="sel_subj" />
+<input type="hidden" value="311" name="SEL_CRSE" />
+<input type="hidden" value="" name="SEL_TITLE" />
+<input type="hidden" value="0" name="BEGIN_HH" />
+<input type="hidden" value="0" name="BEGIN_MI" />
+<input type="hidden" value="a" name="BEGIN_AP" />
+<input type="hidden" value="dummy" name="SEL_DAY" />
+<input type="hidden" value="dummy" name="SEL_PTRM" />
+<input type="hidden" value="0" name="END_HH" />
+<input type="hidden" value="0" name="END_MI" />
+<input type="hidden" value="a" name="END_AP" />
+<input type="hidden" value="dummy" name="SEL_CAMP" />
+<input type="hidden" value="COL" name="SEL_CAMP" />
+<input type="hidden" value="dummy" name="SEL_SCHD" />
+<input type="hidden" value="dummy" name="SEL_SESS" />
+<input type="hidden" value="dummy" name="SEL_INSTR" />
+<input type="hidden" value="%" name="SEL_INSTR" />
+<input type="hidden" value="dummy" name="SEL_ATTR" />
+<input type="hidden" value="%" name="SEL_ATTR" />
+<input type="hidden" value="dummy" name="SEL_LEVL" />
+<input type="hidden" value="%" name="SEL_LEVL" />
+<input type="hidden" value="dummy" name="SEL_INSM" />
+<input type="hidden" value="" name="sel_dunt_code" />
+<input type="hidden" value="" name="sel_dunt_unit" />
+<input type="hidden" value="" name="call_value_in" />
+<input type="hidden" value="dummy" name="rsts" />
+<input type="hidden" value="dummy" name="crn" />
+<input type="hidden" value="1" name="path" />
+<button url="" class="htmlButton" '="" onclick="beforeSubmit(this)" value="View Sections" name="SUB_BTN" type="submit" id="id____UID20"><div class="defaultButtonSmall"><div><div>View Sections</div></div></div></button><input type="submit" value="View Sections" name="SUB_BTN" style="display: none;" />
+</form>
+<br />
+</td>
+</tr>
+<tr><td width="10%" class="dddefault">330</td>
+<td width="35%" text-align="left" class="dddefault">Programming Lang Structures</td>
+<td>
+<form onsubmit="return checkSubmit()" method="POST" action="/BANP/bwskfcls.P_GetCrse">
+<input type="hidden" value="201341" name="term_in" />
+<input type="hidden" value="dummy" name="sel_subj" />
+<input type="hidden" value="CSCE" name="sel_subj" />
+<input type="hidden" value="330" name="SEL_CRSE" />
+<input type="hidden" value="" name="SEL_TITLE" />
+<input type="hidden" value="0" name="BEGIN_HH" />
+<input type="hidden" value="0" name="BEGIN_MI" />
+<input type="hidden" value="a" name="BEGIN_AP" />
+<input type="hidden" value="dummy" name="SEL_DAY" />
+<input type="hidden" value="dummy" name="SEL_PTRM" />
+<input type="hidden" value="0" name="END_HH" />
+<input type="hidden" value="0" name="END_MI" />
+<input type="hidden" value="a" name="END_AP" />
+<input type="hidden" value="dummy" name="SEL_CAMP" />
+<input type="hidden" value="COL" name="SEL_CAMP" />
+<input type="hidden" value="dummy" name="SEL_SCHD" />
+<input type="hidden" value="dummy" name="SEL_SESS" />
+<input type="hidden" value="dummy" name="SEL_INSTR" />
+<input type="hidden" value="%" name="SEL_INSTR" />
+<input type="hidden" value="dummy" name="SEL_ATTR" />
+<input type="hidden" value="%" name="SEL_ATTR" />
+<input type="hidden" value="dummy" name="SEL_LEVL" />
+<input type="hidden" value="%" name="SEL_LEVL" />
+<input type="hidden" value="dummy" name="SEL_INSM" />
+<input type="hidden" value="" name="sel_dunt_code" />
+<input type="hidden" value="" name="sel_dunt_unit" />
+<input type="hidden" value="" name="call_value_in" />
+<input type="hidden" value="dummy" name="rsts" />
+<input type="hidden" value="dummy" name="crn" />
+<input type="hidden" value="1" name="path" />
+<button url="" class="htmlButton" '="" onclick="beforeSubmit(this)" value="View Sections" name="SUB_BTN" type="submit" id="id____UID21"><div class="defaultButtonSmall"><div><div>View Sections</div></div></div></button><input type="submit" value="View Sections" name="SUB_BTN" style="display: none;" />
+</form>
+<br />
+</td>
+</tr>
+<tr><td width="10%" class="dddefault">350</td>
+<td width="35%" text-align="left" class="dddefault">Data Structure &amp; Algorithms</td>
+<td>
+<form onsubmit="return checkSubmit()" method="POST" action="/BANP/bwskfcls.P_GetCrse">
+<input type="hidden" value="201341" name="term_in" />
+<input type="hidden" value="dummy" name="sel_subj" />
+<input type="hidden" value="CSCE" name="sel_subj" />
+<input type="hidden" value="350" name="SEL_CRSE" />
+<input type="hidden" value="" name="SEL_TITLE" />
+<input type="hidden" value="0" name="BEGIN_HH" />
+<input type="hidden" value="0" name="BEGIN_MI" />
+<input type="hidden" value="a" name="BEGIN_AP" />
+<input type="hidden" value="dummy" name="SEL_DAY" />
+<input type="hidden" value="dummy" name="SEL_PTRM" />
+<input type="hidden" value="0" name="END_HH" />
+<input type="hidden" value="0" name="END_MI" />
+<input type="hidden" value="a" name="END_AP" />
+<input type="hidden" value="dummy" name="SEL_CAMP" />
+<input type="hidden" value="COL" name="SEL_CAMP" />
+<input type="hidden" value="dummy" name="SEL_SCHD" />
+<input type="hidden" value="dummy" name="SEL_SESS" />
+<input type="hidden" value="dummy" name="SEL_INSTR" />
+<input type="hidden" value="%" name="SEL_INSTR" />
+<input type="hidden" value="dummy" name="SEL_ATTR" />
+<input type="hidden" value="%" name="SEL_ATTR" />
+<input type="hidden" value="dummy" name="SEL_LEVL" />
+<input type="hidden" value="%" name="SEL_LEVL" />
+<input type="hidden" value="dummy" name="SEL_INSM" />
+<input type="hidden" value="" name="sel_dunt_code" />
+<input type="hidden" value="" name="sel_dunt_unit" />
+<input type="hidden" value="" name="call_value_in" />
+<input type="hidden" value="dummy" name="rsts" />
+<input type="hidden" value="dummy" name="crn" />
+<input type="hidden" value="1" name="path" />
+<button url="" class="htmlButton" '="" onclick="beforeSubmit(this)" value="View Sections" name="SUB_BTN" type="submit" id="id____UID22"><div class="defaultButtonSmall"><div><div>View Sections</div></div></div></button><input type="submit" value="View Sections" name="SUB_BTN" style="display: none;" />
+</form>
+<br />
+</td>
+</tr>
+<tr><td width="10%" class="dddefault">355</td>
+<td width="35%" text-align="left" class="dddefault">Foundations of Computation</td>
+<td>
+<form onsubmit="return checkSubmit()" method="POST" action="/BANP/bwskfcls.P_GetCrse">
+<input type="hidden" value="201341" name="term_in" />
+<input type="hidden" value="dummy" name="sel_subj" />
+<input type="hidden" value="CSCE" name="sel_subj" />
+<input type="hidden" value="355" name="SEL_CRSE" />
+<input type="hidden" value="" name="SEL_TITLE" />
+<input type="hidden" value="0" name="BEGIN_HH" />
+<input type="hidden" value="0" name="BEGIN_MI" />
+<input type="hidden" value="a" name="BEGIN_AP" />
+<input type="hidden" value="dummy" name="SEL_DAY" />
+<input type="hidden" value="dummy" name="SEL_PTRM" />
+<input type="hidden" value="0" name="END_HH" />
+<input type="hidden" value="0" name="END_MI" />
+<input type="hidden" value="a" name="END_AP" />
+<input type="hidden" value="dummy" name="SEL_CAMP" />
+<input type="hidden" value="COL" name="SEL_CAMP" />
+<input type="hidden" value="dummy" name="SEL_SCHD" />
+<input type="hidden" value="dummy" name="SEL_SESS" />
+<input type="hidden" value="dummy" name="SEL_INSTR" />
+<input type="hidden" value="%" name="SEL_INSTR" />
+<input type="hidden" value="dummy" name="SEL_ATTR" />
+<input type="hidden" value="%" name="SEL_ATTR" />
+<input type="hidden" value="dummy" name="SEL_LEVL" />
+<input type="hidden" value="%" name="SEL_LEVL" />
+<input type="hidden" value="dummy" name="SEL_INSM" />
+<input type="hidden" value="" name="sel_dunt_code" />
+<input type="hidden" value="" name="sel_dunt_unit" />
+<input type="hidden" value="" name="call_value_in" />
+<input type="hidden" value="dummy" name="rsts" />
+<input type="hidden" value="dummy" name="crn" />
+<input type="hidden" value="1" name="path" />
+<button url="" class="htmlButton" '="" onclick="beforeSubmit(this)" value="View Sections" name="SUB_BTN" type="submit" id="id____UID23"><div class="defaultButtonSmall"><div><div>View Sections</div></div></div></button><input type="submit" value="View Sections" name="SUB_BTN" style="display: none;" />
+</form>
+<br />
+</td>
+</tr>
+<tr><td width="10%" class="dddefault">374</td>
+<td width="35%" text-align="left" class="dddefault">Robotic Applications &amp; Design</td>
+<td>
+<form onsubmit="return checkSubmit()" method="POST" action="/BANP/bwskfcls.P_GetCrse">
+<input type="hidden" value="201341" name="term_in" />
+<input type="hidden" value="dummy" name="sel_subj" />
+<input type="hidden" value="CSCE" name="sel_subj" />
+<input type="hidden" value="374" name="SEL_CRSE" />
+<input type="hidden" value="" name="SEL_TITLE" />
+<input type="hidden" value="0" name="BEGIN_HH" />
+<input type="hidden" value="0" name="BEGIN_MI" />
+<input type="hidden" value="a" name="BEGIN_AP" />
+<input type="hidden" value="dummy" name="SEL_DAY" />
+<input type="hidden" value="dummy" name="SEL_PTRM" />
+<input type="hidden" value="0" name="END_HH" />
+<input type="hidden" value="0" name="END_MI" />
+<input type="hidden" value="a" name="END_AP" />
+<input type="hidden" value="dummy" name="SEL_CAMP" />
+<input type="hidden" value="COL" name="SEL_CAMP" />
+<input type="hidden" value="dummy" name="SEL_SCHD" />
+<input type="hidden" value="dummy" name="SEL_SESS" />
+<input type="hidden" value="dummy" name="SEL_INSTR" />
+<input type="hidden" value="%" name="SEL_INSTR" />
+<input type="hidden" value="dummy" name="SEL_ATTR" />
+<input type="hidden" value="%" name="SEL_ATTR" />
+<input type="hidden" value="dummy" name="SEL_LEVL" />
+<input type="hidden" value="%" name="SEL_LEVL" />
+<input type="hidden" value="dummy" name="SEL_INSM" />
+<input type="hidden" value="" name="sel_dunt_code" />
+<input type="hidden" value="" name="sel_dunt_unit" />
+<input type="hidden" value="" name="call_value_in" />
+<input type="hidden" value="dummy" name="rsts" />
+<input type="hidden" value="dummy" name="crn" />
+<input type="hidden" value="1" name="path" />
+<button url="" class="htmlButton" '="" onclick="beforeSubmit(this)" value="View Sections" name="SUB_BTN" type="submit" id="id____UID24"><div class="defaultButtonSmall"><div><div>View Sections</div></div></div></button><input type="submit" value="View Sections" name="SUB_BTN" style="display: none;" />
+</form>
+<br />
+</td>
+</tr>
+<tr><td width="10%" class="dddefault">390</td>
+<td width="35%" text-align="left" class="dddefault">Profess Issues Comp Sci &amp; Engr</td>
+<td>
+<form onsubmit="return checkSubmit()" method="POST" action="/BANP/bwskfcls.P_GetCrse">
+<input type="hidden" value="201341" name="term_in" />
+<input type="hidden" value="dummy" name="sel_subj" />
+<input type="hidden" value="CSCE" name="sel_subj" />
+<input type="hidden" value="390" name="SEL_CRSE" />
+<input type="hidden" value="" name="SEL_TITLE" />
+<input type="hidden" value="0" name="BEGIN_HH" />
+<input type="hidden" value="0" name="BEGIN_MI" />
+<input type="hidden" value="a" name="BEGIN_AP" />
+<input type="hidden" value="dummy" name="SEL_DAY" />
+<input type="hidden" value="dummy" name="SEL_PTRM" />
+<input type="hidden" value="0" name="END_HH" />
+<input type="hidden" value="0" name="END_MI" />
+<input type="hidden" value="a" name="END_AP" />
+<input type="hidden" value="dummy" name="SEL_CAMP" />
+<input type="hidden" value="COL" name="SEL_CAMP" />
+<input type="hidden" value="dummy" name="SEL_SCHD" />
+<input type="hidden" value="dummy" name="SEL_SESS" />
+<input type="hidden" value="dummy" name="SEL_INSTR" />
+<input type="hidden" value="%" name="SEL_INSTR" />
+<input type="hidden" value="dummy" name="SEL_ATTR" />
+<input type="hidden" value="%" name="SEL_ATTR" />
+<input type="hidden" value="dummy" name="SEL_LEVL" />
+<input type="hidden" value="%" name="SEL_LEVL" />
+<input type="hidden" value="dummy" name="SEL_INSM" />
+<input type="hidden" value="" name="sel_dunt_code" />
+<input type="hidden" value="" name="sel_dunt_unit" />
+<input type="hidden" value="" name="call_value_in" />
+<input type="hidden" value="dummy" name="rsts" />
+<input type="hidden" value="dummy" name="crn" />
+<input type="hidden" value="1" name="path" />
+<button url="" class="htmlButton" '="" onclick="beforeSubmit(this)" value="View Sections" name="SUB_BTN" type="submit" id="id____UID25"><div class="defaultButtonSmall"><div><div>View Sections</div></div></div></button><input type="submit" value="View Sections" name="SUB_BTN" style="display: none;" />
+</form>
+<br />
+</td>
+</tr>
+<tr><td width="10%" class="dddefault">416</td>
+<td width="35%" text-align="left" class="dddefault">Introd to Computer Networks</td>
+<td>
+<form onsubmit="return checkSubmit()" method="POST" action="/BANP/bwskfcls.P_GetCrse">
+<input type="hidden" value="201341" name="term_in" />
+<input type="hidden" value="dummy" name="sel_subj" />
+<input type="hidden" value="CSCE" name="sel_subj" />
+<input type="hidden" value="416" name="SEL_CRSE" />
+<input type="hidden" value="" name="SEL_TITLE" />
+<input type="hidden" value="0" name="BEGIN_HH" />
+<input type="hidden" value="0" name="BEGIN_MI" />
+<input type="hidden" value="a" name="BEGIN_AP" />
+<input type="hidden" value="dummy" name="SEL_DAY" />
+<input type="hidden" value="dummy" name="SEL_PTRM" />
+<input type="hidden" value="0" name="END_HH" />
+<input type="hidden" value="0" name="END_MI" />
+<input type="hidden" value="a" name="END_AP" />
+<input type="hidden" value="dummy" name="SEL_CAMP" />
+<input type="hidden" value="COL" name="SEL_CAMP" />
+<input type="hidden" value="dummy" name="SEL_SCHD" />
+<input type="hidden" value="dummy" name="SEL_SESS" />
+<input type="hidden" value="dummy" name="SEL_INSTR" />
+<input type="hidden" value="%" name="SEL_INSTR" />
+<input type="hidden" value="dummy" name="SEL_ATTR" />
+<input type="hidden" value="%" name="SEL_ATTR" />
+<input type="hidden" value="dummy" name="SEL_LEVL" />
+<input type="hidden" value="%" name="SEL_LEVL" />
+<input type="hidden" value="dummy" name="SEL_INSM" />
+<input type="hidden" value="" name="sel_dunt_code" />
+<input type="hidden" value="" name="sel_dunt_unit" />
+<input type="hidden" value="" name="call_value_in" />
+<input type="hidden" value="dummy" name="rsts" />
+<input type="hidden" value="dummy" name="crn" />
+<input type="hidden" value="1" name="path" />
+<button url="" class="htmlButton" '="" onclick="beforeSubmit(this)" value="View Sections" name="SUB_BTN" type="submit" id="id____UID26"><div class="defaultButtonSmall"><div><div>View Sections</div></div></div></button><input type="submit" value="View Sections" name="SUB_BTN" style="display: none;" />
+</form>
+<br />
+</td>
+</tr>
+<tr><td width="10%" class="dddefault">490</td>
+<td width="35%" text-align="left" class="dddefault">Capstone Software Engr Proj I</td>
+<td>
+<form onsubmit="return checkSubmit()" method="POST" action="/BANP/bwskfcls.P_GetCrse">
+<input type="hidden" value="201341" name="term_in" />
+<input type="hidden" value="dummy" name="sel_subj" />
+<input type="hidden" value="CSCE" name="sel_subj" />
+<input type="hidden" value="490" name="SEL_CRSE" />
+<input type="hidden" value="" name="SEL_TITLE" />
+<input type="hidden" value="0" name="BEGIN_HH" />
+<input type="hidden" value="0" name="BEGIN_MI" />
+<input type="hidden" value="a" name="BEGIN_AP" />
+<input type="hidden" value="dummy" name="SEL_DAY" />
+<input type="hidden" value="dummy" name="SEL_PTRM" />
+<input type="hidden" value="0" name="END_HH" />
+<input type="hidden" value="0" name="END_MI" />
+<input type="hidden" value="a" name="END_AP" />
+<input type="hidden" value="dummy" name="SEL_CAMP" />
+<input type="hidden" value="COL" name="SEL_CAMP" />
+<input type="hidden" value="dummy" name="SEL_SCHD" />
+<input type="hidden" value="dummy" name="SEL_SESS" />
+<input type="hidden" value="dummy" name="SEL_INSTR" />
+<input type="hidden" value="%" name="SEL_INSTR" />
+<input type="hidden" value="dummy" name="SEL_ATTR" />
+<input type="hidden" value="%" name="SEL_ATTR" />
+<input type="hidden" value="dummy" name="SEL_LEVL" />
+<input type="hidden" value="%" name="SEL_LEVL" />
+<input type="hidden" value="dummy" name="SEL_INSM" />
+<input type="hidden" value="" name="sel_dunt_code" />
+<input type="hidden" value="" name="sel_dunt_unit" />
+<input type="hidden" value="" name="call_value_in" />
+<input type="hidden" value="dummy" name="rsts" />
+<input type="hidden" value="dummy" name="crn" />
+<input type="hidden" value="1" name="path" />
+<button url="" class="htmlButton" '="" onclick="beforeSubmit(this)" value="View Sections" name="SUB_BTN" type="submit" id="id____UID27"><div class="defaultButtonSmall"><div><div>View Sections</div></div></div></button><input type="submit" value="View Sections" name="SUB_BTN" style="display: none;" />
+</form>
+<br />
+</td>
+</tr>
+<tr><td width="10%" class="dddefault">498</td>
+<td width="35%" text-align="left" class="dddefault">Independent Study</td>
+<td>
+<form onsubmit="return checkSubmit()" method="POST" action="/BANP/bwskfcls.P_GetCrse">
+<input type="hidden" value="201341" name="term_in" />
+<input type="hidden" value="dummy" name="sel_subj" />
+<input type="hidden" value="CSCE" name="sel_subj" />
+<input type="hidden" value="498" name="SEL_CRSE" />
+<input type="hidden" value="" name="SEL_TITLE" />
+<input type="hidden" value="0" name="BEGIN_HH" />
+<input type="hidden" value="0" name="BEGIN_MI" />
+<input type="hidden" value="a" name="BEGIN_AP" />
+<input type="hidden" value="dummy" name="SEL_DAY" />
+<input type="hidden" value="dummy" name="SEL_PTRM" />
+<input type="hidden" value="0" name="END_HH" />
+<input type="hidden" value="0" name="END_MI" />
+<input type="hidden" value="a" name="END_AP" />
+<input type="hidden" value="dummy" name="SEL_CAMP" />
+<input type="hidden" value="COL" name="SEL_CAMP" />
+<input type="hidden" value="dummy" name="SEL_SCHD" />
+<input type="hidden" value="dummy" name="SEL_SESS" />
+<input type="hidden" value="dummy" name="SEL_INSTR" />
+<input type="hidden" value="%" name="SEL_INSTR" />
+<input type="hidden" value="dummy" name="SEL_ATTR" />
+<input type="hidden" value="%" name="SEL_ATTR" />
+<input type="hidden" value="dummy" name="SEL_LEVL" />
+<input type="hidden" value="%" name="SEL_LEVL" />
+<input type="hidden" value="dummy" name="SEL_INSM" />
+<input type="hidden" value="" name="sel_dunt_code" />
+<input type="hidden" value="" name="sel_dunt_unit" />
+<input type="hidden" value="" name="call_value_in" />
+<input type="hidden" value="dummy" name="rsts" />
+<input type="hidden" value="dummy" name="crn" />
+<input type="hidden" value="1" name="path" />
+<button url="" class="htmlButton" '="" onclick="beforeSubmit(this)" value="View Sections" name="SUB_BTN" type="submit" id="id____UID28"><div class="defaultButtonSmall"><div><div>View Sections</div></div></div></button><input type="submit" value="View Sections" name="SUB_BTN" style="display: none;" />
+</form>
+<br />
+</td>
+</tr>
+<tr><td width="10%" class="dddefault">500</td>
+<td width="35%" text-align="left" class="dddefault">Computer Program &amp; Applicats</td>
+<td>
+<form onsubmit="return checkSubmit()" method="POST" action="/BANP/bwskfcls.P_GetCrse">
+<input type="hidden" value="201341" name="term_in" />
+<input type="hidden" value="dummy" name="sel_subj" />
+<input type="hidden" value="CSCE" name="sel_subj" />
+<input type="hidden" value="500" name="SEL_CRSE" />
+<input type="hidden" value="" name="SEL_TITLE" />
+<input type="hidden" value="0" name="BEGIN_HH" />
+<input type="hidden" value="0" name="BEGIN_MI" />
+<input type="hidden" value="a" name="BEGIN_AP" />
+<input type="hidden" value="dummy" name="SEL_DAY" />
+<input type="hidden" value="dummy" name="SEL_PTRM" />
+<input type="hidden" value="0" name="END_HH" />
+<input type="hidden" value="0" name="END_MI" />
+<input type="hidden" value="a" name="END_AP" />
+<input type="hidden" value="dummy" name="SEL_CAMP" />
+<input type="hidden" value="COL" name="SEL_CAMP" />
+<input type="hidden" value="dummy" name="SEL_SCHD" />
+<input type="hidden" value="dummy" name="SEL_SESS" />
+<input type="hidden" value="dummy" name="SEL_INSTR" />
+<input type="hidden" value="%" name="SEL_INSTR" />
+<input type="hidden" value="dummy" name="SEL_ATTR" />
+<input type="hidden" value="%" name="SEL_ATTR" />
+<input type="hidden" value="dummy" name="SEL_LEVL" />
+<input type="hidden" value="%" name="SEL_LEVL" />
+<input type="hidden" value="dummy" name="SEL_INSM" />
+<input type="hidden" value="" name="sel_dunt_code" />
+<input type="hidden" value="" name="sel_dunt_unit" />
+<input type="hidden" value="" name="call_value_in" />
+<input type="hidden" value="dummy" name="rsts" />
+<input type="hidden" value="dummy" name="crn" />
+<input type="hidden" value="1" name="path" />
+<button url="" class="htmlButton" '="" onclick="beforeSubmit(this)" value="View Sections" name="SUB_BTN" type="submit" id="id____UID29"><div class="defaultButtonSmall"><div><div>View Sections</div></div></div></button><input type="submit" value="View Sections" name="SUB_BTN" style="display: none;" />
+</form>
+<br />
+</td>
+</tr>
+<tr><td width="10%" class="dddefault">513</td>
+<td width="35%" text-align="left" class="dddefault">Computer Architecture</td>
+<td>
+<form onsubmit="return checkSubmit()" method="POST" action="/BANP/bwskfcls.P_GetCrse">
+<input type="hidden" value="201341" name="term_in" />
+<input type="hidden" value="dummy" name="sel_subj" />
+<input type="hidden" value="CSCE" name="sel_subj" />
+<input type="hidden" value="513" name="SEL_CRSE" />
+<input type="hidden" value="" name="SEL_TITLE" />
+<input type="hidden" value="0" name="BEGIN_HH" />
+<input type="hidden" value="0" name="BEGIN_MI" />
+<input type="hidden" value="a" name="BEGIN_AP" />
+<input type="hidden" value="dummy" name="SEL_DAY" />
+<input type="hidden" value="dummy" name="SEL_PTRM" />
+<input type="hidden" value="0" name="END_HH" />
+<input type="hidden" value="0" name="END_MI" />
+<input type="hidden" value="a" name="END_AP" />
+<input type="hidden" value="dummy" name="SEL_CAMP" />
+<input type="hidden" value="COL" name="SEL_CAMP" />
+<input type="hidden" value="dummy" name="SEL_SCHD" />
+<input type="hidden" value="dummy" name="SEL_SESS" />
+<input type="hidden" value="dummy" name="SEL_INSTR" />
+<input type="hidden" value="%" name="SEL_INSTR" />
+<input type="hidden" value="dummy" name="SEL_ATTR" />
+<input type="hidden" value="%" name="SEL_ATTR" />
+<input type="hidden" value="dummy" name="SEL_LEVL" />
+<input type="hidden" value="%" name="SEL_LEVL" />
+<input type="hidden" value="dummy" name="SEL_INSM" />
+<input type="hidden" value="" name="sel_dunt_code" />
+<input type="hidden" value="" name="sel_dunt_unit" />
+<input type="hidden" value="" name="call_value_in" />
+<input type="hidden" value="dummy" name="rsts" />
+<input type="hidden" value="dummy" name="crn" />
+<input type="hidden" value="1" name="path" />
+<button url="" class="htmlButton" '="" onclick="beforeSubmit(this)" value="View Sections" name="SUB_BTN" type="submit" id="id____UID30"><div class="defaultButtonSmall"><div><div>View Sections</div></div></div></button><input type="submit" value="View Sections" name="SUB_BTN" style="display: none;" />
+</form>
+<br />
+</td>
+</tr>
+<tr><td width="10%" class="dddefault">520</td>
+<td width="35%" text-align="left" class="dddefault">Database System Design</td>
+<td>
+<form onsubmit="return checkSubmit()" method="POST" action="/BANP/bwskfcls.P_GetCrse">
+<input type="hidden" value="201341" name="term_in" />
+<input type="hidden" value="dummy" name="sel_subj" />
+<input type="hidden" value="CSCE" name="sel_subj" />
+<input type="hidden" value="520" name="SEL_CRSE" />
+<input type="hidden" value="" name="SEL_TITLE" />
+<input type="hidden" value="0" name="BEGIN_HH" />
+<input type="hidden" value="0" name="BEGIN_MI" />
+<input type="hidden" value="a" name="BEGIN_AP" />
+<input type="hidden" value="dummy" name="SEL_DAY" />
+<input type="hidden" value="dummy" name="SEL_PTRM" />
+<input type="hidden" value="0" name="END_HH" />
+<input type="hidden" value="0" name="END_MI" />
+<input type="hidden" value="a" name="END_AP" />
+<input type="hidden" value="dummy" name="SEL_CAMP" />
+<input type="hidden" value="COL" name="SEL_CAMP" />
+<input type="hidden" value="dummy" name="SEL_SCHD" />
+<input type="hidden" value="dummy" name="SEL_SESS" />
+<input type="hidden" value="dummy" name="SEL_INSTR" />
+<input type="hidden" value="%" name="SEL_INSTR" />
+<input type="hidden" value="dummy" name="SEL_ATTR" />
+<input type="hidden" value="%" name="SEL_ATTR" />
+<input type="hidden" value="dummy" name="SEL_LEVL" />
+<input type="hidden" value="%" name="SEL_LEVL" />
+<input type="hidden" value="dummy" name="SEL_INSM" />
+<input type="hidden" value="" name="sel_dunt_code" />
+<input type="hidden" value="" name="sel_dunt_unit" />
+<input type="hidden" value="" name="call_value_in" />
+<input type="hidden" value="dummy" name="rsts" />
+<input type="hidden" value="dummy" name="crn" />
+<input type="hidden" value="1" name="path" />
+<button url="" class="htmlButton" '="" onclick="beforeSubmit(this)" value="View Sections" name="SUB_BTN" type="submit" id="id____UID31"><div class="defaultButtonSmall"><div><div>View Sections</div></div></div></button><input type="submit" value="View Sections" name="SUB_BTN" style="display: none;" />
+</form>
+<br />
+</td>
+</tr>
+<tr><td width="10%" class="dddefault">522</td>
+<td width="35%" text-align="left" class="dddefault">Informat Security Principles</td>
+<td>
+<form onsubmit="return checkSubmit()" method="POST" action="/BANP/bwskfcls.P_GetCrse">
+<input type="hidden" value="201341" name="term_in" />
+<input type="hidden" value="dummy" name="sel_subj" />
+<input type="hidden" value="CSCE" name="sel_subj" />
+<input type="hidden" value="522" name="SEL_CRSE" />
+<input type="hidden" value="" name="SEL_TITLE" />
+<input type="hidden" value="0" name="BEGIN_HH" />
+<input type="hidden" value="0" name="BEGIN_MI" />
+<input type="hidden" value="a" name="BEGIN_AP" />
+<input type="hidden" value="dummy" name="SEL_DAY" />
+<input type="hidden" value="dummy" name="SEL_PTRM" />
+<input type="hidden" value="0" name="END_HH" />
+<input type="hidden" value="0" name="END_MI" />
+<input type="hidden" value="a" name="END_AP" />
+<input type="hidden" value="dummy" name="SEL_CAMP" />
+<input type="hidden" value="COL" name="SEL_CAMP" />
+<input type="hidden" value="dummy" name="SEL_SCHD" />
+<input type="hidden" value="dummy" name="SEL_SESS" />
+<input type="hidden" value="dummy" name="SEL_INSTR" />
+<input type="hidden" value="%" name="SEL_INSTR" />
+<input type="hidden" value="dummy" name="SEL_ATTR" />
+<input type="hidden" value="%" name="SEL_ATTR" />
+<input type="hidden" value="dummy" name="SEL_LEVL" />
+<input type="hidden" value="%" name="SEL_LEVL" />
+<input type="hidden" value="dummy" name="SEL_INSM" />
+<input type="hidden" value="" name="sel_dunt_code" />
+<input type="hidden" value="" name="sel_dunt_unit" />
+<input type="hidden" value="" name="call_value_in" />
+<input type="hidden" value="dummy" name="rsts" />
+<input type="hidden" value="dummy" name="crn" />
+<input type="hidden" value="1" name="path" />
+<button url="" class="htmlButton" '="" onclick="beforeSubmit(this)" value="View Sections" name="SUB_BTN" type="submit" id="id____UID32"><div class="defaultButtonSmall"><div><div>View Sections</div></div></div></button><input type="submit" value="View Sections" name="SUB_BTN" style="display: none;" />
+</form>
+<br />
+</td>
+</tr>
+<tr><td width="10%" class="dddefault">552</td>
+<td width="35%" text-align="left" class="dddefault">Computer Game Development</td>
+<td>
+<form onsubmit="return checkSubmit()" method="POST" action="/BANP/bwskfcls.P_GetCrse">
+<input type="hidden" value="201341" name="term_in" />
+<input type="hidden" value="dummy" name="sel_subj" />
+<input type="hidden" value="CSCE" name="sel_subj" />
+<input type="hidden" value="552" name="SEL_CRSE" />
+<input type="hidden" value="" name="SEL_TITLE" />
+<input type="hidden" value="0" name="BEGIN_HH" />
+<input type="hidden" value="0" name="BEGIN_MI" />
+<input type="hidden" value="a" name="BEGIN_AP" />
+<input type="hidden" value="dummy" name="SEL_DAY" />
+<input type="hidden" value="dummy" name="SEL_PTRM" />
+<input type="hidden" value="0" name="END_HH" />
+<input type="hidden" value="0" name="END_MI" />
+<input type="hidden" value="a" name="END_AP" />
+<input type="hidden" value="dummy" name="SEL_CAMP" />
+<input type="hidden" value="COL" name="SEL_CAMP" />
+<input type="hidden" value="dummy" name="SEL_SCHD" />
+<input type="hidden" value="dummy" name="SEL_SESS" />
+<input type="hidden" value="dummy" name="SEL_INSTR" />
+<input type="hidden" value="%" name="SEL_INSTR" />
+<input type="hidden" value="dummy" name="SEL_ATTR" />
+<input type="hidden" value="%" name="SEL_ATTR" />
+<input type="hidden" value="dummy" name="SEL_LEVL" />
+<input type="hidden" value="%" name="SEL_LEVL" />
+<input type="hidden" value="dummy" name="SEL_INSM" />
+<input type="hidden" value="" name="sel_dunt_code" />
+<input type="hidden" value="" name="sel_dunt_unit" />
+<input type="hidden" value="" name="call_value_in" />
+<input type="hidden" value="dummy" name="rsts" />
+<input type="hidden" value="dummy" name="crn" />
+<input type="hidden" value="1" name="path" />
+<button url="" class="htmlButton" '="" onclick="beforeSubmit(this)" value="View Sections" name="SUB_BTN" type="submit" id="id____UID33"><div class="defaultButtonSmall"><div><div>View Sections</div></div></div></button><input type="submit" value="View Sections" name="SUB_BTN" style="display: none;" />
+</form>
+<br />
+</td>
+</tr>
+<tr><td width="10%" class="dddefault">565</td>
+<td width="35%" text-align="left" class="dddefault">Introduct to Computer Graphics</td>
+<td>
+<form onsubmit="return checkSubmit()" method="POST" action="/BANP/bwskfcls.P_GetCrse">
+<input type="hidden" value="201341" name="term_in" />
+<input type="hidden" value="dummy" name="sel_subj" />
+<input type="hidden" value="CSCE" name="sel_subj" />
+<input type="hidden" value="565" name="SEL_CRSE" />
+<input type="hidden" value="" name="SEL_TITLE" />
+<input type="hidden" value="0" name="BEGIN_HH" />
+<input type="hidden" value="0" name="BEGIN_MI" />
+<input type="hidden" value="a" name="BEGIN_AP" />
+<input type="hidden" value="dummy" name="SEL_DAY" />
+<input type="hidden" value="dummy" name="SEL_PTRM" />
+<input type="hidden" value="0" name="END_HH" />
+<input type="hidden" value="0" name="END_MI" />
+<input type="hidden" value="a" name="END_AP" />
+<input type="hidden" value="dummy" name="SEL_CAMP" />
+<input type="hidden" value="COL" name="SEL_CAMP" />
+<input type="hidden" value="dummy" name="SEL_SCHD" />
+<input type="hidden" value="dummy" name="SEL_SESS" />
+<input type="hidden" value="dummy" name="SEL_INSTR" />
+<input type="hidden" value="%" name="SEL_INSTR" />
+<input type="hidden" value="dummy" name="SEL_ATTR" />
+<input type="hidden" value="%" name="SEL_ATTR" />
+<input type="hidden" value="dummy" name="SEL_LEVL" />
+<input type="hidden" value="%" name="SEL_LEVL" />
+<input type="hidden" value="dummy" name="SEL_INSM" />
+<input type="hidden" value="" name="sel_dunt_code" />
+<input type="hidden" value="" name="sel_dunt_unit" />
+<input type="hidden" value="" name="call_value_in" />
+<input type="hidden" value="dummy" name="rsts" />
+<input type="hidden" value="dummy" name="crn" />
+<input type="hidden" value="1" name="path" />
+<button url="" class="htmlButton" '="" onclick="beforeSubmit(this)" value="View Sections" name="SUB_BTN" type="submit" id="id____UID34"><div class="defaultButtonSmall"><div><div>View Sections</div></div></div></button><input type="submit" value="View Sections" name="SUB_BTN" style="display: none;" />
+</form>
+<br />
+</td>
+</tr>
+<tr><td width="10%" class="dddefault">590</td>
+<td width="35%" text-align="left" class="dddefault">Topics in Informat Technology</td>
+<td>
+<form onsubmit="return checkSubmit()" method="POST" action="/BANP/bwskfcls.P_GetCrse">
+<input type="hidden" value="201341" name="term_in" />
+<input type="hidden" value="dummy" name="sel_subj" />
+<input type="hidden" value="CSCE" name="sel_subj" />
+<input type="hidden" value="590" name="SEL_CRSE" />
+<input type="hidden" value="" name="SEL_TITLE" />
+<input type="hidden" value="0" name="BEGIN_HH" />
+<input type="hidden" value="0" name="BEGIN_MI" />
+<input type="hidden" value="a" name="BEGIN_AP" />
+<input type="hidden" value="dummy" name="SEL_DAY" />
+<input type="hidden" value="dummy" name="SEL_PTRM" />
+<input type="hidden" value="0" name="END_HH" />
+<input type="hidden" value="0" name="END_MI" />
+<input type="hidden" value="a" name="END_AP" />
+<input type="hidden" value="dummy" name="SEL_CAMP" />
+<input type="hidden" value="COL" name="SEL_CAMP" />
+<input type="hidden" value="dummy" name="SEL_SCHD" />
+<input type="hidden" value="dummy" name="SEL_SESS" />
+<input type="hidden" value="dummy" name="SEL_INSTR" />
+<input type="hidden" value="%" name="SEL_INSTR" />
+<input type="hidden" value="dummy" name="SEL_ATTR" />
+<input type="hidden" value="%" name="SEL_ATTR" />
+<input type="hidden" value="dummy" name="SEL_LEVL" />
+<input type="hidden" value="%" name="SEL_LEVL" />
+<input type="hidden" value="dummy" name="SEL_INSM" />
+<input type="hidden" value="" name="sel_dunt_code" />
+<input type="hidden" value="" name="sel_dunt_unit" />
+<input type="hidden" value="" name="call_value_in" />
+<input type="hidden" value="dummy" name="rsts" />
+<input type="hidden" value="dummy" name="crn" />
+<input type="hidden" value="1" name="path" />
+<button url="" class="htmlButton" '="" onclick="beforeSubmit(this)" value="View Sections" name="SUB_BTN" type="submit" id="id____UID35"><div class="defaultButtonSmall"><div><div>View Sections</div></div></div></button><input type="submit" value="View Sections" name="SUB_BTN" style="display: none;" />
+</form>
+<br />
+</td>
+</tr>
+<tr><td width="10%" class="dddefault">611</td>
+<td width="35%" text-align="left" class="dddefault">Advanced Digital Design</td>
+<td>
+<form onsubmit="return checkSubmit()" method="POST" action="/BANP/bwskfcls.P_GetCrse">
+<input type="hidden" value="201341" name="term_in" />
+<input type="hidden" value="dummy" name="sel_subj" />
+<input type="hidden" value="CSCE" name="sel_subj" />
+<input type="hidden" value="611" name="SEL_CRSE" />
+<input type="hidden" value="" name="SEL_TITLE" />
+<input type="hidden" value="0" name="BEGIN_HH" />
+<input type="hidden" value="0" name="BEGIN_MI" />
+<input type="hidden" value="a" name="BEGIN_AP" />
+<input type="hidden" value="dummy" name="SEL_DAY" />
+<input type="hidden" value="dummy" name="SEL_PTRM" />
+<input type="hidden" value="0" name="END_HH" />
+<input type="hidden" value="0" name="END_MI" />
+<input type="hidden" value="a" name="END_AP" />
+<input type="hidden" value="dummy" name="SEL_CAMP" />
+<input type="hidden" value="COL" name="SEL_CAMP" />
+<input type="hidden" value="dummy" name="SEL_SCHD" />
+<input type="hidden" value="dummy" name="SEL_SESS" />
+<input type="hidden" value="dummy" name="SEL_INSTR" />
+<input type="hidden" value="%" name="SEL_INSTR" />
+<input type="hidden" value="dummy" name="SEL_ATTR" />
+<input type="hidden" value="%" name="SEL_ATTR" />
+<input type="hidden" value="dummy" name="SEL_LEVL" />
+<input type="hidden" value="%" name="SEL_LEVL" />
+<input type="hidden" value="dummy" name="SEL_INSM" />
+<input type="hidden" value="" name="sel_dunt_code" />
+<input type="hidden" value="" name="sel_dunt_unit" />
+<input type="hidden" value="" name="call_value_in" />
+<input type="hidden" value="dummy" name="rsts" />
+<input type="hidden" value="dummy" name="crn" />
+<input type="hidden" value="1" name="path" />
+<button url="" class="htmlButton" '="" onclick="beforeSubmit(this)" value="View Sections" name="SUB_BTN" type="submit" id="id____UID36"><div class="defaultButtonSmall"><div><div>View Sections</div></div></div></button><input type="submit" value="View Sections" name="SUB_BTN" style="display: none;" />
+</form>
+<br />
+</td>
+</tr>
+<tr><td width="10%" class="dddefault">715</td>
+<td width="35%" text-align="left" class="dddefault">Network Systems Security</td>
+<td>
+<form onsubmit="return checkSubmit()" method="POST" action="/BANP/bwskfcls.P_GetCrse">
+<input type="hidden" value="201341" name="term_in" />
+<input type="hidden" value="dummy" name="sel_subj" />
+<input type="hidden" value="CSCE" name="sel_subj" />
+<input type="hidden" value="715" name="SEL_CRSE" />
+<input type="hidden" value="" name="SEL_TITLE" />
+<input type="hidden" value="0" name="BEGIN_HH" />
+<input type="hidden" value="0" name="BEGIN_MI" />
+<input type="hidden" value="a" name="BEGIN_AP" />
+<input type="hidden" value="dummy" name="SEL_DAY" />
+<input type="hidden" value="dummy" name="SEL_PTRM" />
+<input type="hidden" value="0" name="END_HH" />
+<input type="hidden" value="0" name="END_MI" />
+<input type="hidden" value="a" name="END_AP" />
+<input type="hidden" value="dummy" name="SEL_CAMP" />
+<input type="hidden" value="COL" name="SEL_CAMP" />
+<input type="hidden" value="dummy" name="SEL_SCHD" />
+<input type="hidden" value="dummy" name="SEL_SESS" />
+<input type="hidden" value="dummy" name="SEL_INSTR" />
+<input type="hidden" value="%" name="SEL_INSTR" />
+<input type="hidden" value="dummy" name="SEL_ATTR" />
+<input type="hidden" value="%" name="SEL_ATTR" />
+<input type="hidden" value="dummy" name="SEL_LEVL" />
+<input type="hidden" value="%" name="SEL_LEVL" />
+<input type="hidden" value="dummy" name="SEL_INSM" />
+<input type="hidden" value="" name="sel_dunt_code" />
+<input type="hidden" value="" name="sel_dunt_unit" />
+<input type="hidden" value="" name="call_value_in" />
+<input type="hidden" value="dummy" name="rsts" />
+<input type="hidden" value="dummy" name="crn" />
+<input type="hidden" value="1" name="path" />
+<button url="" class="htmlButton" '="" onclick="beforeSubmit(this)" value="View Sections" name="SUB_BTN" type="submit" id="id____UID37"><div class="defaultButtonSmall"><div><div>View Sections</div></div></div></button><input type="submit" value="View Sections" name="SUB_BTN" style="display: none;" />
+</form>
+<br />
+</td>
+</tr>
+<tr><td width="10%" class="dddefault">725</td>
+<td width="35%" text-align="left" class="dddefault">Informat Retrieval: Alg &amp; Mods</td>
+<td>
+<form onsubmit="return checkSubmit()" method="POST" action="/BANP/bwskfcls.P_GetCrse">
+<input type="hidden" value="201341" name="term_in" />
+<input type="hidden" value="dummy" name="sel_subj" />
+<input type="hidden" value="CSCE" name="sel_subj" />
+<input type="hidden" value="725" name="SEL_CRSE" />
+<input type="hidden" value="" name="SEL_TITLE" />
+<input type="hidden" value="0" name="BEGIN_HH" />
+<input type="hidden" value="0" name="BEGIN_MI" />
+<input type="hidden" value="a" name="BEGIN_AP" />
+<input type="hidden" value="dummy" name="SEL_DAY" />
+<input type="hidden" value="dummy" name="SEL_PTRM" />
+<input type="hidden" value="0" name="END_HH" />
+<input type="hidden" value="0" name="END_MI" />
+<input type="hidden" value="a" name="END_AP" />
+<input type="hidden" value="dummy" name="SEL_CAMP" />
+<input type="hidden" value="COL" name="SEL_CAMP" />
+<input type="hidden" value="dummy" name="SEL_SCHD" />
+<input type="hidden" value="dummy" name="SEL_SESS" />
+<input type="hidden" value="dummy" name="SEL_INSTR" />
+<input type="hidden" value="%" name="SEL_INSTR" />
+<input type="hidden" value="dummy" name="SEL_ATTR" />
+<input type="hidden" value="%" name="SEL_ATTR" />
+<input type="hidden" value="dummy" name="SEL_LEVL" />
+<input type="hidden" value="%" name="SEL_LEVL" />
+<input type="hidden" value="dummy" name="SEL_INSM" />
+<input type="hidden" value="" name="sel_dunt_code" />
+<input type="hidden" value="" name="sel_dunt_unit" />
+<input type="hidden" value="" name="call_value_in" />
+<input type="hidden" value="dummy" name="rsts" />
+<input type="hidden" value="dummy" name="crn" />
+<input type="hidden" value="1" name="path" />
+<button url="" class="htmlButton" '="" onclick="beforeSubmit(this)" value="View Sections" name="SUB_BTN" type="submit" id="id____UID38"><div class="defaultButtonSmall"><div><div>View Sections</div></div></div></button><input type="submit" value="View Sections" name="SUB_BTN" style="display: none;" />
+</form>
+<br />
+</td>
+</tr>
+<tr><td width="10%" class="dddefault">747</td>
+<td width="35%" text-align="left" class="dddefault">Software Test &amp; Qual Assurance</td>
+<td>
+<form onsubmit="return checkSubmit()" method="POST" action="/BANP/bwskfcls.P_GetCrse">
+<input type="hidden" value="201341" name="term_in" />
+<input type="hidden" value="dummy" name="sel_subj" />
+<input type="hidden" value="CSCE" name="sel_subj" />
+<input type="hidden" value="747" name="SEL_CRSE" />
+<input type="hidden" value="" name="SEL_TITLE" />
+<input type="hidden" value="0" name="BEGIN_HH" />
+<input type="hidden" value="0" name="BEGIN_MI" />
+<input type="hidden" value="a" name="BEGIN_AP" />
+<input type="hidden" value="dummy" name="SEL_DAY" />
+<input type="hidden" value="dummy" name="SEL_PTRM" />
+<input type="hidden" value="0" name="END_HH" />
+<input type="hidden" value="0" name="END_MI" />
+<input type="hidden" value="a" name="END_AP" />
+<input type="hidden" value="dummy" name="SEL_CAMP" />
+<input type="hidden" value="COL" name="SEL_CAMP" />
+<input type="hidden" value="dummy" name="SEL_SCHD" />
+<input type="hidden" value="dummy" name="SEL_SESS" />
+<input type="hidden" value="dummy" name="SEL_INSTR" />
+<input type="hidden" value="%" name="SEL_INSTR" />
+<input type="hidden" value="dummy" name="SEL_ATTR" />
+<input type="hidden" value="%" name="SEL_ATTR" />
+<input type="hidden" value="dummy" name="SEL_LEVL" />
+<input type="hidden" value="%" name="SEL_LEVL" />
+<input type="hidden" value="dummy" name="SEL_INSM" />
+<input type="hidden" value="" name="sel_dunt_code" />
+<input type="hidden" value="" name="sel_dunt_unit" />
+<input type="hidden" value="" name="call_value_in" />
+<input type="hidden" value="dummy" name="rsts" />
+<input type="hidden" value="dummy" name="crn" />
+<input type="hidden" value="1" name="path" />
+<button url="" class="htmlButton" '="" onclick="beforeSubmit(this)" value="View Sections" name="SUB_BTN" type="submit" id="id____UID39"><div class="defaultButtonSmall"><div><div>View Sections</div></div></div></button><input type="submit" value="View Sections" name="SUB_BTN" style="display: none;" />
+</form>
+<br />
+</td>
+</tr>
+<tr><td width="10%" class="dddefault">750</td>
+<td width="35%" text-align="left" class="dddefault">Analysis of Algorithms</td>
+<td>
+<form onsubmit="return checkSubmit()" method="POST" action="/BANP/bwskfcls.P_GetCrse">
+<input type="hidden" value="201341" name="term_in" />
+<input type="hidden" value="dummy" name="sel_subj" />
+<input type="hidden" value="CSCE" name="sel_subj" />
+<input type="hidden" value="750" name="SEL_CRSE" />
+<input type="hidden" value="" name="SEL_TITLE" />
+<input type="hidden" value="0" name="BEGIN_HH" />
+<input type="hidden" value="0" name="BEGIN_MI" />
+<input type="hidden" value="a" name="BEGIN_AP" />
+<input type="hidden" value="dummy" name="SEL_DAY" />
+<input type="hidden" value="dummy" name="SEL_PTRM" />
+<input type="hidden" value="0" name="END_HH" />
+<input type="hidden" value="0" name="END_MI" />
+<input type="hidden" value="a" name="END_AP" />
+<input type="hidden" value="dummy" name="SEL_CAMP" />
+<input type="hidden" value="COL" name="SEL_CAMP" />
+<input type="hidden" value="dummy" name="SEL_SCHD" />
+<input type="hidden" value="dummy" name="SEL_SESS" />
+<input type="hidden" value="dummy" name="SEL_INSTR" />
+<input type="hidden" value="%" name="SEL_INSTR" />
+<input type="hidden" value="dummy" name="SEL_ATTR" />
+<input type="hidden" value="%" name="SEL_ATTR" />
+<input type="hidden" value="dummy" name="SEL_LEVL" />
+<input type="hidden" value="%" name="SEL_LEVL" />
+<input type="hidden" value="dummy" name="SEL_INSM" />
+<input type="hidden" value="" name="sel_dunt_code" />
+<input type="hidden" value="" name="sel_dunt_unit" />
+<input type="hidden" value="" name="call_value_in" />
+<input type="hidden" value="dummy" name="rsts" />
+<input type="hidden" value="dummy" name="crn" />
+<input type="hidden" value="1" name="path" />
+<button url="" class="htmlButton" '="" onclick="beforeSubmit(this)" value="View Sections" name="SUB_BTN" type="submit" id="id____UID40"><div class="defaultButtonSmall"><div><div>View Sections</div></div></div></button><input type="submit" value="View Sections" name="SUB_BTN" style="display: none;" />
+</form>
+<br />
+</td>
+</tr>
+<tr><td width="10%" class="dddefault">758</td>
+<td width="35%" text-align="left" class="dddefault">Probabilistic System Analysis</td>
+<td>
+<form onsubmit="return checkSubmit()" method="POST" action="/BANP/bwskfcls.P_GetCrse">
+<input type="hidden" value="201341" name="term_in" />
+<input type="hidden" value="dummy" name="sel_subj" />
+<input type="hidden" value="CSCE" name="sel_subj" />
+<input type="hidden" value="758" name="SEL_CRSE" />
+<input type="hidden" value="" name="SEL_TITLE" />
+<input type="hidden" value="0" name="BEGIN_HH" />
+<input type="hidden" value="0" name="BEGIN_MI" />
+<input type="hidden" value="a" name="BEGIN_AP" />
+<input type="hidden" value="dummy" name="SEL_DAY" />
+<input type="hidden" value="dummy" name="SEL_PTRM" />
+<input type="hidden" value="0" name="END_HH" />
+<input type="hidden" value="0" name="END_MI" />
+<input type="hidden" value="a" name="END_AP" />
+<input type="hidden" value="dummy" name="SEL_CAMP" />
+<input type="hidden" value="COL" name="SEL_CAMP" />
+<input type="hidden" value="dummy" name="SEL_SCHD" />
+<input type="hidden" value="dummy" name="SEL_SESS" />
+<input type="hidden" value="dummy" name="SEL_INSTR" />
+<input type="hidden" value="%" name="SEL_INSTR" />
+<input type="hidden" value="dummy" name="SEL_ATTR" />
+<input type="hidden" value="%" name="SEL_ATTR" />
+<input type="hidden" value="dummy" name="SEL_LEVL" />
+<input type="hidden" value="%" name="SEL_LEVL" />
+<input type="hidden" value="dummy" name="SEL_INSM" />
+<input type="hidden" value="" name="sel_dunt_code" />
+<input type="hidden" value="" name="sel_dunt_unit" />
+<input type="hidden" value="" name="call_value_in" />
+<input type="hidden" value="dummy" name="rsts" />
+<input type="hidden" value="dummy" name="crn" />
+<input type="hidden" value="1" name="path" />
+<button url="" class="htmlButton" '="" onclick="beforeSubmit(this)" value="View Sections" name="SUB_BTN" type="submit" id="id____UID41"><div class="defaultButtonSmall"><div><div>View Sections</div></div></div></button><input type="submit" value="View Sections" name="SUB_BTN" style="display: none;" />
+</form>
+<br />
+</td>
+</tr>
+<tr><td width="10%" class="dddefault">791</td>
+<td width="35%" text-align="left" class="dddefault">Seminar in Advances in Computg</td>
+<td>
+<form onsubmit="return checkSubmit()" method="POST" action="/BANP/bwskfcls.P_GetCrse">
+<input type="hidden" value="201341" name="term_in" />
+<input type="hidden" value="dummy" name="sel_subj" />
+<input type="hidden" value="CSCE" name="sel_subj" />
+<input type="hidden" value="791" name="SEL_CRSE" />
+<input type="hidden" value="" name="SEL_TITLE" />
+<input type="hidden" value="0" name="BEGIN_HH" />
+<input type="hidden" value="0" name="BEGIN_MI" />
+<input type="hidden" value="a" name="BEGIN_AP" />
+<input type="hidden" value="dummy" name="SEL_DAY" />
+<input type="hidden" value="dummy" name="SEL_PTRM" />
+<input type="hidden" value="0" name="END_HH" />
+<input type="hidden" value="0" name="END_MI" />
+<input type="hidden" value="a" name="END_AP" />
+<input type="hidden" value="dummy" name="SEL_CAMP" />
+<input type="hidden" value="COL" name="SEL_CAMP" />
+<input type="hidden" value="dummy" name="SEL_SCHD" />
+<input type="hidden" value="dummy" name="SEL_SESS" />
+<input type="hidden" value="dummy" name="SEL_INSTR" />
+<input type="hidden" value="%" name="SEL_INSTR" />
+<input type="hidden" value="dummy" name="SEL_ATTR" />
+<input type="hidden" value="%" name="SEL_ATTR" />
+<input type="hidden" value="dummy" name="SEL_LEVL" />
+<input type="hidden" value="%" name="SEL_LEVL" />
+<input type="hidden" value="dummy" name="SEL_INSM" />
+<input type="hidden" value="" name="sel_dunt_code" />
+<input type="hidden" value="" name="sel_dunt_unit" />
+<input type="hidden" value="" name="call_value_in" />
+<input type="hidden" value="dummy" name="rsts" />
+<input type="hidden" value="dummy" name="crn" />
+<input type="hidden" value="1" name="path" />
+<button url="" class="htmlButton" '="" onclick="beforeSubmit(this)" value="View Sections" name="SUB_BTN" type="submit" id="id____UID42"><div class="defaultButtonSmall"><div><div>View Sections</div></div></div></button><input type="submit" value="View Sections" name="SUB_BTN" style="display: none;" />
+</form>
+<br />
+</td>
+</tr>
+<tr><td width="10%" class="dddefault">797</td>
+<td width="35%" text-align="left" class="dddefault">Individual Study and Research</td>
+<td>
+<form onsubmit="return checkSubmit()" method="POST" action="/BANP/bwskfcls.P_GetCrse">
+<input type="hidden" value="201341" name="term_in" />
+<input type="hidden" value="dummy" name="sel_subj" />
+<input type="hidden" value="CSCE" name="sel_subj" />
+<input type="hidden" value="797" name="SEL_CRSE" />
+<input type="hidden" value="" name="SEL_TITLE" />
+<input type="hidden" value="0" name="BEGIN_HH" />
+<input type="hidden" value="0" name="BEGIN_MI" />
+<input type="hidden" value="a" name="BEGIN_AP" />
+<input type="hidden" value="dummy" name="SEL_DAY" />
+<input type="hidden" value="dummy" name="SEL_PTRM" />
+<input type="hidden" value="0" name="END_HH" />
+<input type="hidden" value="0" name="END_MI" />
+<input type="hidden" value="a" name="END_AP" />
+<input type="hidden" value="dummy" name="SEL_CAMP" />
+<input type="hidden" value="COL" name="SEL_CAMP" />
+<input type="hidden" value="dummy" name="SEL_SCHD" />
+<input type="hidden" value="dummy" name="SEL_SESS" />
+<input type="hidden" value="dummy" name="SEL_INSTR" />
+<input type="hidden" value="%" name="SEL_INSTR" />
+<input type="hidden" value="dummy" name="SEL_ATTR" />
+<input type="hidden" value="%" name="SEL_ATTR" />
+<input type="hidden" value="dummy" name="SEL_LEVL" />
+<input type="hidden" value="%" name="SEL_LEVL" />
+<input type="hidden" value="dummy" name="SEL_INSM" />
+<input type="hidden" value="" name="sel_dunt_code" />
+<input type="hidden" value="" name="sel_dunt_unit" />
+<input type="hidden" value="" name="call_value_in" />
+<input type="hidden" value="dummy" name="rsts" />
+<input type="hidden" value="dummy" name="crn" />
+<input type="hidden" value="1" name="path" />
+<button url="" class="htmlButton" '="" onclick="beforeSubmit(this)" value="View Sections" name="SUB_BTN" type="submit" id="id____UID43"><div class="defaultButtonSmall"><div><div>View Sections</div></div></div></button><input type="submit" value="View Sections" name="SUB_BTN" style="display: none;" />
+</form>
+<br />
+</td>
+</tr>
+<tr><td width="10%" class="dddefault">798</td>
+<td width="35%" text-align="left" class="dddefault">Directed Study and Research</td>
+<td>
+<form onsubmit="return checkSubmit()" method="POST" action="/BANP/bwskfcls.P_GetCrse">
+<input type="hidden" value="201341" name="term_in" />
+<input type="hidden" value="dummy" name="sel_subj" />
+<input type="hidden" value="CSCE" name="sel_subj" />
+<input type="hidden" value="798" name="SEL_CRSE" />
+<input type="hidden" value="" name="SEL_TITLE" />
+<input type="hidden" value="0" name="BEGIN_HH" />
+<input type="hidden" value="0" name="BEGIN_MI" />
+<input type="hidden" value="a" name="BEGIN_AP" />
+<input type="hidden" value="dummy" name="SEL_DAY" />
+<input type="hidden" value="dummy" name="SEL_PTRM" />
+<input type="hidden" value="0" name="END_HH" />
+<input type="hidden" value="0" name="END_MI" />
+<input type="hidden" value="a" name="END_AP" />
+<input type="hidden" value="dummy" name="SEL_CAMP" />
+<input type="hidden" value="COL" name="SEL_CAMP" />
+<input type="hidden" value="dummy" name="SEL_SCHD" />
+<input type="hidden" value="dummy" name="SEL_SESS" />
+<input type="hidden" value="dummy" name="SEL_INSTR" />
+<input type="hidden" value="%" name="SEL_INSTR" />
+<input type="hidden" value="dummy" name="SEL_ATTR" />
+<input type="hidden" value="%" name="SEL_ATTR" />
+<input type="hidden" value="dummy" name="SEL_LEVL" />
+<input type="hidden" value="%" name="SEL_LEVL" />
+<input type="hidden" value="dummy" name="SEL_INSM" />
+<input type="hidden" value="" name="sel_dunt_code" />
+<input type="hidden" value="" name="sel_dunt_unit" />
+<input type="hidden" value="" name="call_value_in" />
+<input type="hidden" value="dummy" name="rsts" />
+<input type="hidden" value="dummy" name="crn" />
+<input type="hidden" value="1" name="path" />
+<button url="" class="htmlButton" '="" onclick="beforeSubmit(this)" value="View Sections" name="SUB_BTN" type="submit" id="id____UID44"><div class="defaultButtonSmall"><div><div>View Sections</div></div></div></button><input type="submit" value="View Sections" name="SUB_BTN" style="display: none;" />
+</form>
+<br />
+</td>
+</tr>
+<tr><td width="10%" class="dddefault">799</td>
+<td width="35%" text-align="left" class="dddefault">Thesis Preparation</td>
+<td>
+<form onsubmit="return checkSubmit()" method="POST" action="/BANP/bwskfcls.P_GetCrse">
+<input type="hidden" value="201341" name="term_in" />
+<input type="hidden" value="dummy" name="sel_subj" />
+<input type="hidden" value="CSCE" name="sel_subj" />
+<input type="hidden" value="799" name="SEL_CRSE" />
+<input type="hidden" value="" name="SEL_TITLE" />
+<input type="hidden" value="0" name="BEGIN_HH" />
+<input type="hidden" value="0" name="BEGIN_MI" />
+<input type="hidden" value="a" name="BEGIN_AP" />
+<input type="hidden" value="dummy" name="SEL_DAY" />
+<input type="hidden" value="dummy" name="SEL_PTRM" />
+<input type="hidden" value="0" name="END_HH" />
+<input type="hidden" value="0" name="END_MI" />
+<input type="hidden" value="a" name="END_AP" />
+<input type="hidden" value="dummy" name="SEL_CAMP" />
+<input type="hidden" value="COL" name="SEL_CAMP" />
+<input type="hidden" value="dummy" name="SEL_SCHD" />
+<input type="hidden" value="dummy" name="SEL_SESS" />
+<input type="hidden" value="dummy" name="SEL_INSTR" />
+<input type="hidden" value="%" name="SEL_INSTR" />
+<input type="hidden" value="dummy" name="SEL_ATTR" />
+<input type="hidden" value="%" name="SEL_ATTR" />
+<input type="hidden" value="dummy" name="SEL_LEVL" />
+<input type="hidden" value="%" name="SEL_LEVL" />
+<input type="hidden" value="dummy" name="SEL_INSM" />
+<input type="hidden" value="" name="sel_dunt_code" />
+<input type="hidden" value="" name="sel_dunt_unit" />
+<input type="hidden" value="" name="call_value_in" />
+<input type="hidden" value="dummy" name="rsts" />
+<input type="hidden" value="dummy" name="crn" />
+<input type="hidden" value="1" name="path" />
+<button url="" class="htmlButton" '="" onclick="beforeSubmit(this)" value="View Sections" name="SUB_BTN" type="submit" id="id____UID45"><div class="defaultButtonSmall"><div><div>View Sections</div></div></div></button><input type="submit" value="View Sections" name="SUB_BTN" style="display: none;" />
+</form>
+<br />
+</td>
+</tr>
+<tr><td width="10%" class="dddefault">822</td>
+<td width="35%" text-align="left" class="dddefault">Data Mining and Warehousing</td>
+<td>
+<form onsubmit="return checkSubmit()" method="POST" action="/BANP/bwskfcls.P_GetCrse">
+<input type="hidden" value="201341" name="term_in" />
+<input type="hidden" value="dummy" name="sel_subj" />
+<input type="hidden" value="CSCE" name="sel_subj" />
+<input type="hidden" value="822" name="SEL_CRSE" />
+<input type="hidden" value="" name="SEL_TITLE" />
+<input type="hidden" value="0" name="BEGIN_HH" />
+<input type="hidden" value="0" name="BEGIN_MI" />
+<input type="hidden" value="a" name="BEGIN_AP" />
+<input type="hidden" value="dummy" name="SEL_DAY" />
+<input type="hidden" value="dummy" name="SEL_PTRM" />
+<input type="hidden" value="0" name="END_HH" />
+<input type="hidden" value="0" name="END_MI" />
+<input type="hidden" value="a" name="END_AP" />
+<input type="hidden" value="dummy" name="SEL_CAMP" />
+<input type="hidden" value="COL" name="SEL_CAMP" />
+<input type="hidden" value="dummy" name="SEL_SCHD" />
+<input type="hidden" value="dummy" name="SEL_SESS" />
+<input type="hidden" value="dummy" name="SEL_INSTR" />
+<input type="hidden" value="%" name="SEL_INSTR" />
+<input type="hidden" value="dummy" name="SEL_ATTR" />
+<input type="hidden" value="%" name="SEL_ATTR" />
+<input type="hidden" value="dummy" name="SEL_LEVL" />
+<input type="hidden" value="%" name="SEL_LEVL" />
+<input type="hidden" value="dummy" name="SEL_INSM" />
+<input type="hidden" value="" name="sel_dunt_code" />
+<input type="hidden" value="" name="sel_dunt_unit" />
+<input type="hidden" value="" name="call_value_in" />
+<input type="hidden" value="dummy" name="rsts" />
+<input type="hidden" value="dummy" name="crn" />
+<input type="hidden" value="1" name="path" />
+<button url="" class="htmlButton" '="" onclick="beforeSubmit(this)" value="View Sections" name="SUB_BTN" type="submit" id="id____UID46"><div class="defaultButtonSmall"><div><div>View Sections</div></div></div></button><input type="submit" value="View Sections" name="SUB_BTN" style="display: none;" />
+</form>
+<br />
+</td>
+</tr>
+<tr><td width="10%" class="dddefault">899</td>
+<td width="35%" text-align="left" class="dddefault">Dissertation Preparation</td>
+<td>
+<form onsubmit="return checkSubmit()" method="POST" action="/BANP/bwskfcls.P_GetCrse">
+<input type="hidden" value="201341" name="term_in" />
+<input type="hidden" value="dummy" name="sel_subj" />
+<input type="hidden" value="CSCE" name="sel_subj" />
+<input type="hidden" value="899" name="SEL_CRSE" />
+<input type="hidden" value="" name="SEL_TITLE" />
+<input type="hidden" value="0" name="BEGIN_HH" />
+<input type="hidden" value="0" name="BEGIN_MI" />
+<input type="hidden" value="a" name="BEGIN_AP" />
+<input type="hidden" value="dummy" name="SEL_DAY" />
+<input type="hidden" value="dummy" name="SEL_PTRM" />
+<input type="hidden" value="0" name="END_HH" />
+<input type="hidden" value="0" name="END_MI" />
+<input type="hidden" value="a" name="END_AP" />
+<input type="hidden" value="dummy" name="SEL_CAMP" />
+<input type="hidden" value="COL" name="SEL_CAMP" />
+<input type="hidden" value="dummy" name="SEL_SCHD" />
+<input type="hidden" value="dummy" name="SEL_SESS" />
+<input type="hidden" value="dummy" name="SEL_INSTR" />
+<input type="hidden" value="%" name="SEL_INSTR" />
+<input type="hidden" value="dummy" name="SEL_ATTR" />
+<input type="hidden" value="%" name="SEL_ATTR" />
+<input type="hidden" value="dummy" name="SEL_LEVL" />
+<input type="hidden" value="%" name="SEL_LEVL" />
+<input type="hidden" value="dummy" name="SEL_INSM" />
+<input type="hidden" value="" name="sel_dunt_code" />
+<input type="hidden" value="" name="sel_dunt_unit" />
+<input type="hidden" value="" name="call_value_in" />
+<input type="hidden" value="dummy" name="rsts" />
+<input type="hidden" value="dummy" name="crn" />
+<input type="hidden" value="1" name="path" />
+<button url="" class="htmlButton" '="" onclick="beforeSubmit(this)" value="View Sections" name="SUB_BTN" type="submit" id="id____UID47"><div class="defaultButtonSmall"><div><div>View Sections</div></div></div></button><input type="submit" value="View Sections" name="SUB_BTN" style="display: none;" />
+</form>
+<br />
+</td>
+</tr>
+</tbody></table>
+
+<!--  ** START OF twbkwbis.P_CloseDoc **  -->
+<table width="100%" cellspacing="0" cellpadding="0" border="0" summary="This is table displays line separator at end of the page." class="plaintable"><tbody><tr><td width="100%" colspan="2" class=""><img width="10" vspace="0" border="0" hspace="0" height="3" name="web_transparent" title="Transparent Image" class="headerImg" alt="Transparent Image" src="/wtlgifs/web_transparent.gif" /></td></tr></tbody></table>
+<a class="skiplinks" onblur="window.status=''; return true" onfocus="window.status='Skip to top of page'; return true" onmouseout="window.status=''; return true" onmouseover="window.status='Skip to top of page'; return true" href="#top">Skip to top of page</a>
+</div><div id="footerLinks"><ul><li><a onblur="window.status=''; return true" onfocus="window.status='Week at a Glance'; return true" onmouseout="window.status=''; return true" onmouseover="window.status='Week at a Glance'; return true" href="/BANP/bwskfshd.P_CrseSchd" title="Week at a Glance">Week at a Glance</a></li><li><a onblur="window.status=''; return true" onfocus="window.status='Student Detail Schedule'; return true" onmouseout="window.status=''; return true" onmouseover="window.status='Student Detail Schedule'; return true" href="/BANP/bwskfshd.P_CrseSchdDetl" title="Student Detail Schedule">Student Detail Schedule</a></li><li style="background-image: none;"><a onblur="window.status=''; return true" onfocus="window.status='View Fee Assessment'; return true" onmouseout="window.status=''; return true" onmouseover="window.status='View Fee Assessment'; return true" href="/BANP/bwskffee.P_FeeAsses" title="View Fee Assessment">View Fee Assessment</a></li></ul></div></div><br style="clear:both" /><br /><div class="disclaimer"> <br /><h5>© 2015 Ellucian Company L.P. and its affiliates.<br /></h5></div></div><div id="pagefooter" class="footertext"><div class="sitemaplink"><a href="twbksite.P_DispSiteMap?menu_name_in=bmenu.P_MainMnu&amp;depth_in=2&amp;columns_in=3">SITE MAP</a></div><div class="reltext">
+Release: 8.5.2.1
+</div></div><div id="globalFooter" class="footertext"></div></div></div>
+
+
+
+
+<div class="footerlinksdiv" style="display: block;">
+</div>
+<div class="footerafterdiv" style="display: block;">
+
+</div>
+<div class="globalafterdiv" style="display: block;">
+
+</div>
+
+
+<div class="poweredbydiv" style="display: block;">
+</div>
+<div class="div1" style="display: block;"></div>
+<div class="div2" style="display: block;"></div>
+<div class="div3" style="display: block;"></div>
+<div class="div4" style="display: block;"></div>
+<div class="div5" style="display: block;"></div>
+<div class="div6" style="display: block;"></div>
+<div class="banner_copyright" style="display: block;"></div>
+
+
+<div id="helpWindow"><div id="helpWindowControls"><span id="helpWindowIcon"></span><span id="helpWindowTitle">Help</span><span id="helpWindowCloseButton"></span></div><div id="helpWindowTop"></div><div id="helpWindowMiddle"><iframe frameborder="no" id="helpWindowContent"></iframe></div><div id="helpWindowBottom"></div><span id="helpWindowTab"><span id="helpWindowTabText">Help</span></span></div><div id="outerFooter" style="left: 0px;"><div id="footer"><div id="footerApplicationBar"><ul id="footerIconContainer"></ul><span class="footerBrandingLogo"></span><div div="" <="" id="footerAppContainer"></div></div></div></div></body></html>

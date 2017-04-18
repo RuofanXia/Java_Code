@@ -1,0 +1,25 @@
+
+public class Test {
+	
+	public static void main(String[] args)
+	{
+		
+	}
+	
+	public void func(ListNode head)
+	{
+		ListNode thirdNode = head.next.next;
+		head.next = thirdNode;
+		thirdNode.prev = head;
+	}
+	
+	public void printInfo(ListNode head)
+	{
+		ListNode ptr = head;
+		while(ptr != null)
+		{
+			System.out.println(ptr.first + ", " + ptr.second);
+			ptr = ptr.next;
+		}
+	}
+}
